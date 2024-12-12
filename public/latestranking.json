@@ -1,0 +1,870 @@
+{
+    "mode:1": {
+        "stage:1": [
+            {
+                "nickname": "naoko.murayama",
+                "icon": 1,
+                "score": 4999,
+                "rank": 1,
+                "date": "20241204"
+            },
+            {
+                "nickname": "mai63",
+                "icon": 4,
+                "score": 4995,
+                "rank": 2,
+                "date": "20241208"
+            },
+            {
+                "nickname": "yamamoto.hiroshi",
+                "icon": 10,
+                "score": 4994,
+                "rank": 3,
+                "date": "20241207"
+            },
+            {
+                "nickname": "buno",
+                "icon": 8,
+                "score": 4990,
+                "rank": 4,
+                "date": "20241208"
+            },
+            {
+                "nickname": "mkoizumi",
+                "icon": 2,
+                "score": 4966,
+                "rank": 5,
+                "date": "20241208"
+            },
+            {
+                "nickname": "akemi.sakamoto",
+                "icon": 7,
+                "score": 4965,
+                "rank": 6,
+                "date": "20241208"
+            },
+            {
+                "nickname": "akira86",
+                "icon": 2,
+                "score": 4958,
+                "rank": 7,
+                "date": "20241207"
+            },
+            {
+                "nickname": "uito",
+                "icon": 9,
+                "score": 4957,
+                "rank": 8,
+                "date": "20241205"
+            },
+            {
+                "nickname": "zyoshida",
+                "icon": 2,
+                "score": 4956,
+                "rank": 9,
+                "date": "20241204"
+            },
+            {
+                "nickname": "haruka.ishida",
+                "icon": 7,
+                "score": 4953,
+                "rank": 10,
+                "date": "20241205"
+            }
+        ],
+        "stage:2": [
+            {
+                "nickname": "yoshida.kenichi",
+                "icon": 8,
+                "score": 5000,
+                "rank": 1,
+                "date": "20241204"
+            },
+            {
+                "nickname": "asuka.kijima",
+                "icon": 1,
+                "score": 4999,
+                "rank": 2,
+                "date": "20241206"
+            },
+            {
+                "nickname": "kaori17",
+                "icon": 10,
+                "score": 4996,
+                "rank": 3,
+                "date": "20241205"
+            },
+            {
+                "nickname": "lmiyazawa",
+                "icon": 0,
+                "score": 4994,
+                "rank": 4,
+                "date": "20241209"
+            },
+            {
+                "nickname": "ryohei.miyazawa",
+                "icon": 9,
+                "score": 4990,
+                "rank": 5,
+                "date": "20241205"
+            },
+            {
+                "nickname": "tanabe.atsushi",
+                "icon": 4,
+                "score": 4983,
+                "rank": 6,
+                "date": "20241206"
+            },
+            {
+                "nickname": "zsaito",
+                "icon": 6,
+                "score": 4975,
+                "rank": 7,
+                "date": "20241209"
+            },
+            {
+                "nickname": "zyoshida",
+                "icon": 2,
+                "score": 4970,
+                "rank": 8,
+                "date": "20241207"
+            },
+            {
+                "nickname": "haruka13",
+                "icon": 9,
+                "score": 4969,
+                "rank": 9,
+                "date": "20241206"
+            },
+            {
+                "nickname": "yoshimoto.yasuhiro",
+                "icon": 0,
+                "score": 4968,
+                "rank": 10,
+                "date": "20241208"
+            }
+        ],
+        "stage:3": [
+            {
+                "nickname": "shuhei51",
+                "icon": 5,
+                "score": 4999,
+                "rank": 1,
+                "date": "20241209"
+            },
+            {
+                "nickname": "kijima.yui",
+                "icon": 5,
+                "score": 4997,
+                "rank": 2,
+                "date": "20241204"
+            },
+            {
+                "nickname": "akira86",
+                "icon": 2,
+                "score": 4993,
+                "rank": 3,
+                "date": "20241205"
+            },
+            {
+                "nickname": "asuka.kijima",
+                "icon": 1,
+                "score": 4987,
+                "rank": 4,
+                "date": "20241209"
+            },
+            {
+                "nickname": "lmiyazawa",
+                "icon": 0,
+                "score": 4971,
+                "rank": 5,
+                "date": "20241208"
+            },
+            {
+                "nickname": "mikako65",
+                "icon": 7,
+                "score": 4941,
+                "rank": 6,
+                "date": "20241204"
+            },
+            {
+                "nickname": "naoko.murayama",
+                "icon": 1,
+                "score": 4941,
+                "rank": 7,
+                "date": "20241204"
+            },
+            {
+                "nickname": "yamamoto.hiroshi",
+                "icon": 10,
+                "score": 4937,
+                "rank": 8,
+                "date": "20241207"
+            },
+            {
+                "nickname": "minoru89",
+                "icon": 5,
+                "score": 4926,
+                "rank": 9,
+                "date": "20241208"
+            },
+            {
+                "nickname": "naoto.takahashi",
+                "icon": 2,
+                "score": 4900,
+                "rank": 10,
+                "date": "20241204"
+            }
+        ],
+        "stage:4": [
+            {
+                "nickname": "jkobayashi",
+                "icon": 7,
+                "score": 4996,
+                "rank": 1,
+                "date": "20241208"
+            },
+            {
+                "nickname": "hideki39",
+                "icon": 0,
+                "score": 4979,
+                "rank": 2,
+                "date": "20241205"
+            },
+            {
+                "nickname": "naoko.kimura",
+                "icon": 6,
+                "score": 4975,
+                "rank": 3,
+                "date": "20241207"
+            },
+            {
+                "nickname": "asuka.kijima",
+                "icon": 1,
+                "score": 4972,
+                "rank": 4,
+                "date": "20241209"
+            },
+            {
+                "nickname": "naoto.takahashi",
+                "icon": 2,
+                "score": 4948,
+                "rank": 5,
+                "date": "20241209"
+            },
+            {
+                "nickname": "kijima.yui",
+                "icon": 5,
+                "score": 4940,
+                "rank": 6,
+                "date": "20241209"
+            },
+            {
+                "nickname": "lmiyazawa",
+                "icon": 0,
+                "score": 4939,
+                "rank": 7,
+                "date": "20241208"
+            },
+            {
+                "nickname": "ryohei.miyazawa",
+                "icon": 9,
+                "score": 4928,
+                "rank": 8,
+                "date": "20241206"
+            },
+            {
+                "nickname": "haruka13",
+                "icon": 9,
+                "score": 4922,
+                "rank": 9,
+                "date": "20241205"
+            },
+            {
+                "nickname": "tanabe.atsushi",
+                "icon": 4,
+                "score": 4921,
+                "rank": 10,
+                "date": "20241207"
+            }
+        ],
+        "stage:5": [
+            {
+                "nickname": "ryohei.miyazawa",
+                "icon": 9,
+                "score": 4998,
+                "rank": 1,
+                "date": "20241205"
+            },
+            {
+                "nickname": "yamamoto.hiroshi",
+                "icon": 10,
+                "score": 4993,
+                "rank": 2,
+                "date": "20241206"
+            },
+            {
+                "nickname": "zyoshida",
+                "icon": 2,
+                "score": 4992,
+                "rank": 3,
+                "date": "20241205"
+            },
+            {
+                "nickname": "mikako65",
+                "icon": 7,
+                "score": 4990,
+                "rank": 4,
+                "date": "20241204"
+            },
+            {
+                "nickname": "akemi.sakamoto",
+                "icon": 7,
+                "score": 4988,
+                "rank": 5,
+                "date": "20241205"
+            },
+            {
+                "nickname": "naoto.takahashi",
+                "icon": 2,
+                "score": 4983,
+                "rank": 6,
+                "date": "20241204"
+            },
+            {
+                "nickname": "zyamagishi",
+                "icon": 5,
+                "score": 4978,
+                "rank": 7,
+                "date": "20241206"
+            },
+            {
+                "nickname": "naoko.kimura",
+                "icon": 6,
+                "score": 4975,
+                "rank": 8,
+                "date": "20241205"
+            },
+            {
+                "nickname": "yoshida.kenichi",
+                "icon": 8,
+                "score": 4975,
+                "rank": 9,
+                "date": "20241205"
+            },
+            {
+                "nickname": "mai63",
+                "icon": 4,
+                "score": 4968,
+                "rank": 10,
+                "date": "20241209"
+            }
+        ],
+        "stage:6": [
+            {
+                "nickname": "buno",
+                "icon": 8,
+                "score": 4998,
+                "rank": 1,
+                "date": "20241209"
+            },
+            {
+                "nickname": "naoto.takahashi",
+                "icon": 2,
+                "score": 4994,
+                "rank": 2,
+                "date": "20241209"
+            },
+            {
+                "nickname": "lmiyazawa",
+                "icon": 0,
+                "score": 4987,
+                "rank": 3,
+                "date": "20241209"
+            },
+            {
+                "nickname": "yoshimoto.yasuhiro",
+                "icon": 0,
+                "score": 4986,
+                "rank": 4,
+                "date": "20241206"
+            },
+            {
+                "nickname": "jkobayashi",
+                "icon": 7,
+                "score": 4983,
+                "rank": 5,
+                "date": "20241204"
+            },
+            {
+                "nickname": "hideki39",
+                "icon": 0,
+                "score": 4983,
+                "rank": 6,
+                "date": "20241207"
+            },
+            {
+                "nickname": "yoshida.kenichi",
+                "icon": 8,
+                "score": 4973,
+                "rank": 7,
+                "date": "20241209"
+            },
+            {
+                "nickname": "mikako65",
+                "icon": 7,
+                "score": 4969,
+                "rank": 8,
+                "date": "20241205"
+            },
+            {
+                "nickname": "asuka.kijima",
+                "icon": 1,
+                "score": 4965,
+                "rank": 9,
+                "date": "20241205"
+            },
+            {
+                "nickname": "uito",
+                "icon": 9,
+                "score": 4959,
+                "rank": 10,
+                "date": "20241209"
+            }
+        ]
+    },
+    "mode:2": {
+        "stage:1": [
+            {
+                "nickname": "lmiyazawa",
+                "icon": 0,
+                "score": 4995,
+                "rank": 1,
+                "date": "20241205"
+            },
+            {
+                "nickname": "mikako65",
+                "icon": 7,
+                "score": 4993,
+                "rank": 2,
+                "date": "20241204"
+            },
+            {
+                "nickname": "naoko.kimura",
+                "icon": 6,
+                "score": 4985,
+                "rank": 3,
+                "date": "20241205"
+            },
+            {
+                "nickname": "minoru89",
+                "icon": 5,
+                "score": 4975,
+                "rank": 4,
+                "date": "20241204"
+            },
+            {
+                "nickname": "ryohei.miyazawa",
+                "icon": 9,
+                "score": 4968,
+                "rank": 5,
+                "date": "20241208"
+            },
+            {
+                "nickname": "yoshida.kenichi",
+                "icon": 8,
+                "score": 4953,
+                "rank": 6,
+                "date": "20241209"
+            },
+            {
+                "nickname": "asuka.kijima",
+                "icon": 1,
+                "score": 4949,
+                "rank": 7,
+                "date": "20241204"
+            },
+            {
+                "nickname": "akemi32",
+                "icon": 8,
+                "score": 4925,
+                "rank": 8,
+                "date": "20241206"
+            },
+            {
+                "nickname": "yamamoto.hiroshi",
+                "icon": 10,
+                "score": 4924,
+                "rank": 9,
+                "date": "20241206"
+            },
+            {
+                "nickname": "akemi.sakamoto",
+                "icon": 7,
+                "score": 4922,
+                "rank": 10,
+                "date": "20241209"
+            }
+        ],
+        "stage:2": [
+            {
+                "nickname": "yamamoto.hiroshi",
+                "icon": 10,
+                "score": 4998,
+                "rank": 1,
+                "date": "20241206"
+            },
+            {
+                "nickname": "lmiyazawa",
+                "icon": 0,
+                "score": 4977,
+                "rank": 2,
+                "date": "20241205"
+            },
+            {
+                "nickname": "mkoizumi",
+                "icon": 2,
+                "score": 4975,
+                "rank": 3,
+                "date": "20241207"
+            },
+            {
+                "nickname": "mikako65",
+                "icon": 7,
+                "score": 4973,
+                "rank": 4,
+                "date": "20241209"
+            },
+            {
+                "nickname": "minoru89",
+                "icon": 5,
+                "score": 4955,
+                "rank": 5,
+                "date": "20241205"
+            },
+            {
+                "nickname": "yoshida.kenichi",
+                "icon": 8,
+                "score": 4954,
+                "rank": 6,
+                "date": "20241204"
+            },
+            {
+                "nickname": "zsaito",
+                "icon": 6,
+                "score": 4932,
+                "rank": 7,
+                "date": "20241207"
+            },
+            {
+                "nickname": "shuhei51",
+                "icon": 5,
+                "score": 4926,
+                "rank": 8,
+                "date": "20241205"
+            },
+            {
+                "nickname": "tanabe.atsushi",
+                "icon": 4,
+                "score": 4923,
+                "rank": 9,
+                "date": "20241205"
+            },
+            {
+                "nickname": "mai63",
+                "icon": 4,
+                "score": 4917,
+                "rank": 10,
+                "date": "20241206"
+            }
+        ],
+        "stage:3": [
+            {
+                "nickname": "akemi.sakamoto",
+                "icon": 7,
+                "score": 4995,
+                "rank": 1,
+                "date": "20241207"
+            },
+            {
+                "nickname": "haruka13",
+                "icon": 9,
+                "score": 4994,
+                "rank": 2,
+                "date": "20241207"
+            },
+            {
+                "nickname": "buno",
+                "icon": 8,
+                "score": 4991,
+                "rank": 3,
+                "date": "20241205"
+            },
+            {
+                "nickname": "shuhei51",
+                "icon": 5,
+                "score": 4986,
+                "rank": 4,
+                "date": "20241207"
+            },
+            {
+                "nickname": "asuka.kijima",
+                "icon": 1,
+                "score": 4973,
+                "rank": 5,
+                "date": "20241208"
+            },
+            {
+                "nickname": "akemi32",
+                "icon": 8,
+                "score": 4972,
+                "rank": 6,
+                "date": "20241208"
+            },
+            {
+                "nickname": "zyamagishi",
+                "icon": 5,
+                "score": 4966,
+                "rank": 7,
+                "date": "20241205"
+            },
+            {
+                "nickname": "tanabe.atsushi",
+                "icon": 4,
+                "score": 4964,
+                "rank": 8,
+                "date": "20241208"
+            },
+            {
+                "nickname": "mkoizumi",
+                "icon": 2,
+                "score": 4957,
+                "rank": 9,
+                "date": "20241207"
+            },
+            {
+                "nickname": "kijima.yui",
+                "icon": 5,
+                "score": 4956,
+                "rank": 10,
+                "date": "20241209"
+            }
+        ],
+        "stage:4": [
+            {
+                "nickname": "abcdedd11aaaa",
+                "icon": 2,
+                "score": 14640,
+                "rank": 1,
+                "date": "20241209"
+            },
+            {
+                "nickname": "zsaito",
+                "icon": 6,
+                "score": 4999,
+                "rank": 2,
+                "date": "20241207"
+            },
+            {
+                "nickname": "naoko.kimura",
+                "icon": 6,
+                "score": 4999,
+                "rank": 3,
+                "date": "20241209"
+            },
+            {
+                "nickname": "akira86",
+                "icon": 2,
+                "score": 4997,
+                "rank": 4,
+                "date": "20241209"
+            },
+            {
+                "nickname": "asuka.kijima",
+                "icon": 1,
+                "score": 4995,
+                "rank": 5,
+                "date": "20241207"
+            },
+            {
+                "nickname": "kijima.yui",
+                "icon": 5,
+                "score": 4994,
+                "rank": 6,
+                "date": "20241204"
+            },
+            {
+                "nickname": "hideki39",
+                "icon": 0,
+                "score": 4983,
+                "rank": 7,
+                "date": "20241206"
+            },
+            {
+                "nickname": "tanabe.atsushi",
+                "icon": 4,
+                "score": 4977,
+                "rank": 8,
+                "date": "20241209"
+            },
+            {
+                "nickname": "minoru89",
+                "icon": 5,
+                "score": 4977,
+                "rank": 9,
+                "date": "20241209"
+            },
+            {
+                "nickname": "ryohei.miyazawa",
+                "icon": 9,
+                "score": 4970,
+                "rank": 10,
+                "date": "20241208"
+            }
+        ],
+        "stage:5": [
+            {
+                "nickname": "uito",
+                "icon": 9,
+                "score": 5000,
+                "rank": 1,
+                "date": "20241205"
+            },
+            {
+                "nickname": "zyoshida",
+                "icon": 2,
+                "score": 4996,
+                "rank": 2,
+                "date": "20241208"
+            },
+            {
+                "nickname": "shuhei51",
+                "icon": 5,
+                "score": 4996,
+                "rank": 3,
+                "date": "20241209"
+            },
+            {
+                "nickname": "yamamoto.hiroshi",
+                "icon": 10,
+                "score": 4993,
+                "rank": 4,
+                "date": "20241205"
+            },
+            {
+                "nickname": "tanabe.atsushi",
+                "icon": 4,
+                "score": 4986,
+                "rank": 5,
+                "date": "20241206"
+            },
+            {
+                "nickname": "mikako65",
+                "icon": 7,
+                "score": 4977,
+                "rank": 6,
+                "date": "20241208"
+            },
+            {
+                "nickname": "minoru89",
+                "icon": 5,
+                "score": 4975,
+                "rank": 7,
+                "date": "20241205"
+            },
+            {
+                "nickname": "fishida",
+                "icon": 4,
+                "score": 4970,
+                "rank": 8,
+                "date": "20241204"
+            },
+            {
+                "nickname": "kaori17",
+                "icon": 10,
+                "score": 4970,
+                "rank": 9,
+                "date": "20241208"
+            },
+            {
+                "nickname": "kijima.yui",
+                "icon": 5,
+                "score": 4958,
+                "rank": 10,
+                "date": "20241204"
+            }
+        ],
+        "stage:6": [
+            {
+                "nickname": "mikako65",
+                "icon": 7,
+                "score": 4998,
+                "rank": 1,
+                "date": "20241207"
+            },
+            {
+                "nickname": "zyamagishi",
+                "icon": 5,
+                "score": 4992,
+                "rank": 2,
+                "date": "20241208"
+            },
+            {
+                "nickname": "yamamoto.hiroshi",
+                "icon": 10,
+                "score": 4992,
+                "rank": 3,
+                "date": "20241208"
+            },
+            {
+                "nickname": "naoko.kimura",
+                "icon": 6,
+                "score": 4989,
+                "rank": 4,
+                "date": "20241206"
+            },
+            {
+                "nickname": "haruka.ishida",
+                "icon": 7,
+                "score": 4987,
+                "rank": 5,
+                "date": "20241207"
+            },
+            {
+                "nickname": "hideki39",
+                "icon": 0,
+                "score": 4984,
+                "rank": 6,
+                "date": "20241208"
+            },
+            {
+                "nickname": "yoshimoto.yasuhiro",
+                "icon": 0,
+                "score": 4973,
+                "rank": 7,
+                "date": "20241206"
+            },
+            {
+                "nickname": "naoto.takahashi",
+                "icon": 2,
+                "score": 4965,
+                "rank": 8,
+                "date": "20241209"
+            },
+            {
+                "nickname": "akemi32",
+                "icon": 8,
+                "score": 4953,
+                "rank": 9,
+                "date": "20241208"
+            },
+            {
+                "nickname": "ryohei.miyazawa",
+                "icon": 9,
+                "score": 4948,
+                "rank": 10,
+                "date": "20241207"
+            }
+        ]
+    }
+}

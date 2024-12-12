@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@splidejs/vue-splide": "^0.6.12",
+    "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
+    "axios": "^1.7.9",
+    "nuxt": "^3.14.1592",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vue3-smooth-scroll": "^0.8.1"
+  },
+  "devDependencies": {
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4"
+  }
+}
