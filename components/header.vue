@@ -1,11 +1,16 @@
 <template>
   <header>
-    <a href="">松江城攻略室とは？</a>
-    <a href="">松江城の特徴</a>
-    <a href="">時代案内人・若武者隊</a>
-    <a href="">イベント・スポット</a>
-    <a href="">スコアボード</a>
-    <a href="">関連情報</a>
+    <a href="" class="text-hover">松江城攻略室とは？</a>
+    /
+    <a href="" class="text-hover">松江城の特徴</a>
+    /
+    <a href="" class="text-hover">時代案内人・若武者隊</a>
+    /
+    <a href="" class="text-hover">イベント・スポット</a>
+    /
+    <a href="" class="text-hover">スコアボード</a>
+    /
+    <a href="" class="text-hover">関連情報</a>
   </header>
 </template>
 
@@ -22,8 +27,22 @@ export default {
 header {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 10px 20px;
-  background-color: #f0f0f0;
+  gap: 1.5%;
+  background-image: url('/img/headerBg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 960px;
+  height: 51px;
+  z-index: 100;
+  line-height: 51px;
+  a {
+    font-size: 14px;
+  }
 }
 </style>

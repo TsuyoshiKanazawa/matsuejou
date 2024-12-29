@@ -1,8 +1,16 @@
 
 
+@font-face {
+  font-family: 'PixelMplus12';
+  src: url('/assets/fonts/PixelMplus12-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   * {
-    font-family: "Hiragino Sans Old W6 JIS2004";
+    font-family: "PixelMplus12", sans-serif;
+    letter-spacing: 0.10em;
   }
   main {
     width: 100%;
@@ -51,9 +59,15 @@ img {
   transform: translateY(0);
 }
 
+.text-hover {
+  &:hover {
+    color: #E6B424;
+    transition: color 0.1s;
+  }
+}
+
 @keyframes rotation{
   0%{ transform:rotate(0);}
-  100%{ transform:rotate(360deg); }
 }
 
 .pc-only {
