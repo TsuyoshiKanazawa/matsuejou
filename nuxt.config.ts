@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+  ssr: false,
   app: {
     head: {
       title: '松江城攻略室 | 国宝指定10周年記念オリジナルブラウザゲーム',
@@ -40,7 +41,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-
+  plugins: [],
   css: [
     '@/assets/scss/reset.scss',
     '@/assets/scss/main.scss'

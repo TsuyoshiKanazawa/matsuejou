@@ -50,8 +50,8 @@ img {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-  transform: translateY(30px);
-  transition: transform 1s ease-out, opacity 1s ease-out;
+  transform: translateY(15px);
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
 .inview {

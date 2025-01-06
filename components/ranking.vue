@@ -1,5 +1,5 @@
 <template>
-  <section class="ranking">
+  <section class="ranking fade-enter-from" v-observe="'inview'">
     <div class="ranking-title">
       <div>松江城攻略室<br>鉄壁の城を攻略せよ!!</div>
       <h2>スコアボード</h2>
