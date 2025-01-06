@@ -7,8 +7,8 @@
         <p class="exp-inner__copy">松江城攻略室 ~鉄壁の城を攻略せよ!! ~</p>
       </div>
       <div class="iphone-img fade-enter-from" v-observe="'inview'">
-        <img src="/img/iphone.png" alt="iphone" class="iphone-img__bg">
-        <img src="/img/inIphone.png" alt="iphone" class="iphone-img__in">
+        <img src="/img/exp/iphone.png" alt="iphone" class="iphone-img__bg">
+        <img src="/img/exp/inIphone.png" alt="iphone" class="iphone-img__in">
       </div>
       <div class="fade-enter-from" v-observe="'inview'">
         <Splide
@@ -16,13 +16,13 @@
           class="slider"
         >
           <SplideSlide>
-            <img src="/img/slider1.jpg" alt="slider1" class="slider__img">
+            <img src="/img/exp/slider1.jpg" alt="slider1" class="slider__img">
           </SplideSlide>
           <SplideSlide>
-            <img src="/img/slider2.jpg" alt="slider2" class="slider__img">
+            <img src="/img/exp/slider2.jpg" alt="slider2" class="slider__img">
           </SplideSlide>
           <SplideSlide>
-            <img src="/img/slider3.jpg" alt="slider3" class="slider__img">
+            <img src="/img/exp/slider3.jpg" alt="slider3" class="slider__img">
           </SplideSlide>
         </Splide>
       </div>
@@ -76,7 +76,7 @@
           松江城天守は2015年7月8日に国宝に指定され、2025年に国宝指定から10周年を迎えます。
         </p>
         <div class="feature-logo">
-          <img src="/img/matsuejouLogo.png" alt="feature">
+          <img src="/img/exp/matsuejouLogo.png" alt="feature">
         </div>
         <p>
           戦乱の時代で一切の攻城を受けずに現代に残った松江城は、<br>
@@ -87,7 +87,7 @@
           松江城攻略室は、まさに「鉄壁の城」と呼ぶにふさわしい松江城を、<br>
           戦乱の世には果たされなかった「攻略」の視点で描くオリジナルブラウザゲームです。
         </p>
-        <img src="/img/matsuejouImage.jpg" alt="feature" class="feature-image">
+        <img src="/img/exp/matsuejouImage.jpg" alt="feature" class="feature-image">
       </div>
     </div>
     <NinjaClimb class="NinjaClimb1" />
@@ -206,7 +206,7 @@ section {
     margin-left: -10%;
   }
   .exp-text {
-    background-image: url('/img/expBG.jpg');
+    background-image: url('/img/exp/expBG.jpg');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -263,7 +263,7 @@ section {
   }
   .feature {
     padding: 4%;
-    background-image: url('/img/matsuejouBG.jpg');
+    background-image: url('/img/exp/matsuejouBG.jpg');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;

@@ -1,10 +1,10 @@
 <template>
   <div class="index">
     <div>
-      <Fv />
+      <Fv id="fv" />
       <div class="contents">
         <div class="border">
-          <Exp />
+          <Exp id="exp" />
           <div class="float">
             <div class="float-button__wrapper">
               <img src="/img/musha.png" alt="play" class="musha">
@@ -13,11 +13,11 @@
                 <p style="font-size: 30px; margin-top: -9px;">GAME PLAY</p>
               </a>
             </div>
-            <Feature />
-            <Guide />
-            <Highlight />
-            <Events />
-            <Spot />
+            <Feature id="feature" />
+            <Guide id="guide" />
+            <Highlight id="highlight" />
+            <Events id="events" />
+            <Spot id="spot" />
             <Ranking id="ranking" />
           </div>
         </div>

@@ -8,9 +8,10 @@ export default defineNuxtConfig({
     }
   },
   compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   ssr: false,
   app: {
+    baseURL: '/matsue-castle-kouryakushitsu/',
     head: {
       title: '松江城攻略室 | 国宝指定10周年記念オリジナルブラウザゲーム',
       htmlAttrs: {

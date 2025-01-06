@@ -36,8 +36,8 @@
         <div class="rankingScore rank">{{ ranking.rank }}位</div>
         <div class="rankingScore score">{{ comma(ranking.score) }}</div>
         <div class="rankingScore nickname">
-          <img v-if="ranking.icon !== 9" :src="`/img/icons/icon${ranking.icon}.png`" alt="icon">
-          <img v-else :src="`/img/icons/icon${ranking.icon}.jpg`" alt="icon">
+          <img v-if="ranking.icon !== 9" :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.png`" alt="icon">
+          <img v-else :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.jpg`" alt="icon">
           {{ ranking.nickname }}
         </div>
       </div>
@@ -55,7 +55,7 @@ export default {
 
     onMounted(async () => {
       try {
-        const response = await axios.get('/latestranking.json');
+        const response = await axios.get('/matsue-castle-kouryakushitsu/latestranking.json');
         rankings.value = response.data['mode:2'];
         console.log(rankings.value['stage:1']);
       } catch (error) {
@@ -77,7 +77,7 @@ export default {
 
 <style lang="scss" scoped>
 .ranking {
-  background-image: url('/img/rankingBg.png');
+  background-image: url('/img/rankingBackground.png');
   background-size: 100% 100%;
   background-position: center;
   width: 800px;

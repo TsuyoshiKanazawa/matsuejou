@@ -1,14 +1,14 @@
 <template>
-  <section>
+  <section style="padding-top: 4%;">
     <div class="feature fade-enter-from" v-observe="'inview'">
       <h2 class="feature-title">松江城攻略室とは？</h2>
       <div class="builder">
         築城主
       </div>
       <div class="feature-content" style="margin-top: 0;">
-        <img src="/img/yoshiharu.jpg" alt="feature" class="content-image">
+        <img src="/img/feature/yoshiharu.jpg" alt="feature" class="content-image">
         <div class="content-text">
-          <h1 class="content-title yellow">堀尾 吉晴</h1>
+          <h1 class="content-title yellow" style="margin-top: 10%;">堀尾 吉晴</h1>
           <div class="content-copy">
             城攻めの経験と戦略に長けた名将
           </div>
@@ -19,105 +19,121 @@
             そのことから「松江開府の祖」と呼ばれる。
           </p>
         </div>
-        <img src="/img/yoshiharuIcon.png" alt="yoshiharuIcon" class="content-icon">
+        <img src="/img/feature/yoshiharuIcon.png" alt="yoshiharuIcon" class="content-icon">
       </div>
       <div class="feature-content">
-        <img src="/img/yoshiharu.jpg" alt="feature" class="content-image">
+        <img src="/img/feature/ohori.jpg" alt="feature" class="content-image">
         <div class="content-text">
-          <h1 class="content-title">堀尾 吉晴</h1>
+          <h1 class="content-title">お堀</h1>
           <div class="content-copy">
-            城攻めの経験と戦略に長けた名将
+            城を囲む水の防壁
           </div>
           <p class="content-explain">
-            豊臣秀吉に仕え、一代で大名に昇りつめた堀尾吉晴。<br>
-            戦場での豊富な経験と多くの武功を積んだ彼は、温厚な人柄と卓越した戦略眼で知られている。<br>
-            1607年、出雲・隠岐の領地を守るため、堅牢な防御を備えた松江城の築城に着手しその後の城下町発展の礎を築いた。<br>
-            そのことから「松江開府の祖」と呼ばれる。
+            築城時からほぼ同じ形を残す城全体を囲む広大な水路で、外敵の侵入を阻む強力な防壁の役割を担った。豊かな水量が保たれたこの堀は、戦略的にも巧みに設計され、周囲の自然景観と調和する美しい水辺となっている。
           </p>
+          <div class="content-overview">
+            <h3 class="content-overview-title">ゲーム概要</h3>
+            <p class="content-overview-text">
+              様々な障害物を避けながら、<br>
+              城内への侵入を目指してお堀を攻略せよ!!
+            </p>
+          </div>
         </div>
-        <img src="/img/yoshiharuIcon.png" alt="yoshiharuIcon" class="content-icon">
+        <img src="/img/feature/ohoriIcon.png" alt="ohoriIcon" class="content-icon">
       </div>
       <div class="feature-content">
-        <img src="/img/yoshiharu.jpg" alt="feature" class="content-image">
+        <img src="/img/feature/ishigaki.jpg" alt="feature" class="content-image">
         <div class="content-text">
-          <h1 class="content-title">堀尾 吉晴</h1>
+          <h1 class="content-title">石垣</h1>
           <div class="content-copy">
-            城攻めの経験と戦略に長けた名将
+            堅牢な石の要塞
           </div>
           <p class="content-explain">
-            豊臣秀吉に仕え、一代で大名に昇りつめた堀尾吉晴。<br>
-            戦場での豊富な経験と多くの武功を積んだ彼は、温厚な人柄と卓越した戦略眼で知られている。<br>
-            1607年、出雲・隠岐の領地を守るため、堅牢な防御を備えた松江城の築城に着手しその後の城下町発展の礎を築いた。<br>
-            そのことから「松江開府の祖」と呼ばれる。
+            隙間なく積み上げられた堅牢な構造で、敵の侵入を阻む防御の要を担った。自然の地形を巧みに利用した石垣は、緩やかな傾斜でありながら圧倒的な威圧感を放ち、見る者に松江城の力強さを感じさせる。
           </p>
+          <div class="content-overview">
+            <h3 class="content-overview-title">ゲーム概要</h3>
+            <p class="content-overview-text">
+              頭上から落ちる石や樽を避けながら、<br>
+              石垣の最上部を目指し攻略せよ!!
+            </p>
+          </div>
         </div>
-        <img src="/img/yoshiharuIcon.png" alt="yoshiharuIcon" class="content-icon">
+        <img src="/img/feature/ishigakiIcon.png" alt="ishigakiIcon" class="content-icon">
       </div>
       <div class="feature-content">
-        <img src="/img/yoshiharu.jpg" alt="feature" class="content-image">
+        <img src="/img/feature/ootemon.jpg" alt="feature" class="content-image">
         <div class="content-text">
-          <h1 class="content-title">堀尾 吉晴</h1>
+          <h1 class="content-title">大手門</h1>
           <div class="content-copy">
-            城攻めの経験と戦略に長けた名将
+            威厳と防御の象徴
           </div>
           <p class="content-explain">
-            豊臣秀吉に仕え、一代で大名に昇りつめた堀尾吉晴。<br>
-            戦場での豊富な経験と多くの武功を積んだ彼は、温厚な人柄と卓越した戦略眼で知られている。<br>
-            1607年、出雲・隠岐の領地を守るため、堅牢な防御を備えた松江城の築城に着手しその後の城下町発展の礎を築いた。<br>
-            そのことから「松江開府の祖」と呼ばれる。
+            大手門は、城への唯一の正式な入口として重要な役割を担った。明治時代の廃城令によって取り壊され、現存していない。今回は松江城絵図などから再現。大手門を抜けることで、壮大な松江城の構えを肌で感じるられる。
           </p>
+          <div class="content-overview">
+            <h3 class="content-overview-title">ゲーム概要</h3>
+            <p class="content-overview-text">
+              弓矢による波状攻撃を避けながら、<br>
+              兵士の力を溜めて大手門に突撃し攻略せよ!!
+            </p>
+          </div>
         </div>
-        <img src="/img/yoshiharuIcon.png" alt="yoshiharuIcon" class="content-icon">
+        <img src="/img/feature/ootemonIcon.png" alt="ootemonIcon" class="content-icon">
       </div>
       <div class="feature-content">
-        <img src="/img/yoshiharu.jpg" alt="feature" class="content-image">
+        <img src="/img/feature/tsukeyagura.jpg" alt="feature" class="content-image">
         <div class="content-text">
-          <h1 class="content-title">堀尾 吉晴</h1>
+          <h1 class="content-title">附櫓<small style="font-size: 14px;">（つけやぐら）</small></h1>
           <div class="content-copy">
-            城攻めの経験と戦略に長けた名将
+            天守を守る最終防衛機能
           </div>
           <p class="content-explain">
-            豊臣秀吉に仕え、一代で大名に昇りつめた堀尾吉晴。<br>
-            戦場での豊富な経験と多くの武功を積んだ彼は、温厚な人柄と卓越した戦略眼で知られている。<br>
-            1607年、出雲・隠岐の領地を守るため、堅牢な防御を備えた松江城の築城に着手しその後の城下町発展の礎を築いた。<br>
-            そのことから「松江開府の祖」と呼ばれる。
+            附櫓（つけやぐら）は、天守の入口に配置された重要な防衛施設で、高い位置から周囲を見渡せる構造となっており、敵の動きをいち早く察知することが可能。堅牢で機能的な附櫓は、天守の守りを一層強化し、城を守る最後の砦として機能する。
           </p>
+          <div class="content-overview" style="margin-top: 13px;">
+            <h3 class="content-overview-title">ゲーム概要</h3>
+            <p class="content-overview-text">
+              全方位からの激しい攻撃を避けながら、<br>
+              天守突入を目指し、鍵を集めて攻略せよ!!
+            </p>
+          </div>
         </div>
-        <img src="/img/yoshiharuIcon.png" alt="yoshiharuIcon" class="content-icon">
+        <img src="/img/feature/tsukeyaguraIcon.png" alt="tsukeyaguraIcon" class="content-icon">
       </div>
       <div class="feature-content">
-        <img src="/img/yoshiharu.jpg" alt="feature" class="content-image">
+        <img src="/img/feature/tensyu.jpg" alt="feature" class="content-image">
         <div class="content-text">
-          <h1 class="content-title">堀尾 吉晴</h1>
+          <h1 class="content-title">天守</h1>
           <div class="content-copy">
-            城攻めの経験と戦略に長けた名将
+            堂々たる松江城の象徴
           </div>
           <p class="content-explain">
-            豊臣秀吉に仕え、一代で大名に昇りつめた堀尾吉晴。<br>
-            戦場での豊富な経験と多くの武功を積んだ彼は、温厚な人柄と卓越した戦略眼で知られている。<br>
-            1607年、出雲・隠岐の領地を守るため、堅牢な防御を備えた松江城の築城に着手しその後の城下町発展の礎を築いた。<br>
-            そのことから「松江開府の祖」と呼ばれる。
+            城山の中心にそびえ立つ松江のシンボル。現存する唯一の「正統天守」であり、高さ約30メートルの威容は防御の拠点でありながら、美しい黒の下見板張りと白壁が見事に調和し、戦略性と美しさを兼ね備える。
           </p>
+          <div class="content-overview" style="margin-top: 50px;">
+            <h3 class="content-overview-title">ゲーム概要</h3>
+            <p class="content-overview-text">
+              迫りくるたくさんの兵士を攻撃し、<br>
+              ボス戦に挑み攻略せよ!!
+            </p>
+          </div>
         </div>
-        <img src="/img/yoshiharuIcon.png" alt="yoshiharuIcon" class="content-icon">
+        <img src="/img/feature/tensyuIcon.png" alt="tensyuIcon" class="content-icon">
       </div>
       <div class="feature-content">
-        <img src="/img/yoshiharu.jpg" alt="feature" class="content-image">
+        <img src="/img/feature/ido.jpg" alt="feature" class="content-image">
         <div class="content-text">
-          <h1 class="content-title">堀尾 吉晴</h1>
+          <h1 class="content-title">地階の井戸</h1>
           <div class="content-copy">
-            城攻めの経験と戦略に長けた名将
+            本丸の地下に眠る生命線
           </div>
           <p class="content-explain">
-            豊臣秀吉に仕え、一代で大名に昇りつめた堀尾吉晴。<br>
-            戦場での豊富な経験と多くの武功を積んだ彼は、温厚な人柄と卓越した戦略眼で知られている。<br>
-            1607年、出雲・隠岐の領地を守るため、堅牢な防御を備えた松江城の築城に着手しその後の城下町発展の礎を築いた。<br>
-            そのことから「松江開府の祖」と呼ばれる。
+            松江城天守にある井戸は、籠城時にも水を確保するために掘られた生命線で、この井戸は深く掘り抜かれており、城がいかなる状況にも耐えられるよう設計されている。地下にひっそりと佇むこの井戸が、松江城の防衛体制を陰ながら支えている。天守内に井戸が現存しているのは、国内において松江城のみである。
           </p>
         </div>
-        <img src="/img/yoshiharuIcon.png" alt="yoshiharuIcon" class="content-icon">
       </div>
-      <img src="/img/ninja_new2.png" alt="feature" class="ninja">
+      <img src="/img/feature/ninja_new2.png" alt="feature" class="ninja">
     </div>
   </section>
 </template>
@@ -125,14 +141,14 @@
 <style lang="scss" scoped>
 .feature {
   padding: 4%;
-  background-image: url('/img/featureBG.jpg');
+  background-image: url('/img/feature/featureBG.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 800px;
   height: 2303px;
   font-size: 12px;
   line-height: 2;
-  margin: 2% auto;
+  margin: 0 auto;
   position: relative;
   .feature-title {
     background-image: url('/img/subtract.png');
@@ -149,7 +165,7 @@
     margin-top: -85px;
   }
   .builder {
-    background-image: url('/img/featureSubtract.png');
+    background-image: url('/img/feature/featureSubtract.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,12 +181,13 @@
     height: 286px;
     margin: 0 auto;
     margin-top: 25px;
-    background-image: url('/img/featureFlame.jpg');
+    background-image: url('/img/feature/featureFlame.jpg');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     padding: 13px;
     display: flex;
+    position: relative;
     .content-image {
       width: 285px;
       border: 2px solid #002D18;
@@ -180,7 +197,7 @@
       background-color: #006837;
       border: 2px solid #002D18;
       color: #fff;
-      margin-top: 10%;
+      margin-top: 3%;
       width: 180px;
       padding-left: 20px;
       border-left: none;
@@ -197,14 +214,34 @@
     }
     .content-explain {
       font-size: 10px;
-      width: 284px;
+      width: 310px;
       padding-left: 20px;
+      line-height: 1.7;
+    }
+    .content-overview {
+      margin-top: 28px;
+      font-size: 10px;
+      width: 284px;
+      height: 103px;
+      padding-left: 20px;
+      line-height: 1.7;
+      .content-overview-title {
+        font-size: 10px;
+        color: #002D18;
+        border: 1px solid #002D18;
+        width: 70px;
+        text-align: center;
+      }
+      .content-overview-text {
+        font-size: 10px;
+        line-height: 1.7;
+      }
     }
     .content-icon {
       width: 72px;
       position: absolute;
       top: 4.5%;
-      right: 12%;
+      right: 2%;
     }
   }
   .ninja {

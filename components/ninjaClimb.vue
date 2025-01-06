@@ -55,8 +55,6 @@ export default {
 
       // 今回のスクロール量
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      // 前回との差をとって方向を判定
-      const diff = scrollTop - this.lastScrollTop;
 
       // パララックス係数（上に動く速度、適宜調整してください）
       const parallaxFactor = 0.7;
@@ -65,7 +63,7 @@ export default {
       const distanceSinceFlip = Math.abs(scrollTop - this.lastFlipScrollTop);
 
       // ▼ 一定距離ごとに反転させる閾値（お好みで調整してください）
-      const FLIP_THRESHOLD = 500;
+      const FLIP_THRESHOLD = 100;
 
       // distanceSinceFlip が一定値を超えたら反転
       if (distanceSinceFlip >= FLIP_THRESHOLD) {
@@ -73,15 +71,14 @@ export default {
         this.currentFlip = -this.currentFlip;
         // 「反転した位置」を今の位置に更新
         this.lastFlipScrollTop = scrollTop;
-      }
-
-      // 画像を translate + scaleX で動かす
-      // 例: 下方向スクロールなら scaleX(1), 上なら scaleX(-1)
-      if (this.$refs.parallaxImage) {
-        this.$refs.parallaxImage.style.transform = `
-          translateY(${scrollTop * parallaxFactor}px)
-          scaleX(${this.currentFlip})
-        `;
+        // 画像を translate + scaleX で動かす
+        // 例: 下方向スクロールなら scaleX(1), 上なら scaleX(-1)
+        if (this.$refs.parallaxImage) {
+          this.$refs.parallaxImage.style.transform = `
+            translateY(${scrollTop * parallaxFactor}px)
+            scaleX(${this.currentFlip})
+          `;
+        }
       }
 
       // 今回のスクロール値を「前回分」として保持
