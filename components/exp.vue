@@ -28,12 +28,14 @@
       </div>
       <div class="exp-text fade-enter-from" v-observe="'inview'">
         <p class="exp-text__content">
-          島根県松江市にある国宝松江城天守が、<br>
-          2025年7月8日に「国宝指定10周年」を迎えることを記念し登場！<br>
           松江城が誇る「鉄壁の守備」を全5ステージ＋シークレットステージで体験できる<br>
-          高難易度オリジナルブラウザゲーム。<br>
+          高難易度オリジナルブラウザゲーム。<br><br>
+
+          攻略モード・無限モード<br>
           「攻略モード」で本丸攻略を目指し、腕に自信のある方は「無限モード」をプレイして<br>
-          ランキングトップを狙ってみよう！<br>
+          ランキングトップを狙ってみよう！<br><br>
+
+          シークレットステージ<br>
           2025年2月25日～2026年3月31の期間中、<br>
           松江城内に設置されている二次元バーコードを読み取ると、<br>
           シークレットステージ「隠ステージ」が出現！<br>
@@ -93,6 +95,7 @@
     <NinjaClimb class="NinjaClimb1" />
     <NinjaClimb class="NinjaClimb2" />
     <NinjaClimb class="NinjaClimb3" />
+    <NinjaClimb class="NinjaClimb4" />
   </section>
 </template>
 
@@ -153,6 +156,13 @@ section {
     z-index: 10;
     height: 200%;
   }
+  .NinjaClimb4 {
+    position: absolute;
+    top: 2300px;
+    left: -8%;
+    z-index: 10;
+    height: 250%;
+  }
 }
 
 .exp {
@@ -211,7 +221,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     width: 800px;
-    height: 371px;
+    height: 401px;
     margin: 4% auto 0;
     text-align: center;
     line-height: 2;

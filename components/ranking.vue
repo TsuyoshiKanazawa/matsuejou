@@ -82,7 +82,7 @@ export default {
   background-position: center;
   width: 800px;
   height: 702px;
-  margin: 7% auto;
+  margin: 7% auto 0%;
 
   .ranking-title {
     background-image: url('/img/rankingTitle.png');

@@ -162,7 +162,7 @@
     font-size: 28px;
     line-height: 64px;
     margin: 0 auto;
-    margin-top: -85px;
+    margin-top: -80px;
   }
   .builder {
     background-image: url('/img/feature/featureSubtract.png');
