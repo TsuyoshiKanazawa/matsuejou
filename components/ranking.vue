@@ -55,7 +55,8 @@ export default {
 
     onMounted(async () => {
       try {
-        const response = await axios.get('/matsue-castle-kouryakushitsu/latestranking.json');
+        // キャッシュを無視するために、現在のタイムスタンプをクエリパラメータとして追加
+        const response = await axios.get(`/matsue-castle-kouryakushitsu/latestranking.json?timestamp=${Date.now()}`);
         rankings.value = response.data['mode:2'];
         console.log(rankings.value['stage:1']);
       } catch (error) {
