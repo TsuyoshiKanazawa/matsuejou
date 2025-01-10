@@ -1,7 +1,7 @@
 <template>
-  <section style="padding-top: 4%;">
+  <section style="padding-top: 4%; scroll-margin-top: 80px;">
     <div class="feature fade-enter-from" v-observe="'inview'">
-      <h2 class="feature-title">松江城攻略室とは？</h2>
+      <h2 class="feature-title">松江城の特徴</h2>
       <div class="builder">
         築城主
       </div>

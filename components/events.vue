@@ -1,5 +1,5 @@
 <template>
-  <section class="events fade-enter-from" v-observe="'inview'">
+  <section class="events fade-enter-from" v-observe="'inview'" style="scroll-margin-top: 120px;">
     <div class="events-title">
       <h2>関連イベント</h2>
     </div>

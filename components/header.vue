@@ -6,11 +6,11 @@
     /
     <a href="#guide" class="text-hover">時代案内人・若武者隊</a>
     /
-    <a href="#highlight" class="text-hover">イベント・スポット</a>
+    <a href="#events" class="text-hover">イベント・スポット</a>
     /
-    <a href="#events" class="text-hover">スコアボード</a>
+    <a href="#ranking" class="text-hover">スコアボード</a>
     /
-    <a href="#spot" class="text-hover">関連情報</a>
+    <a href="/" class="text-hover">関連情報</a>
   </header>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <section class="ranking fade-enter-from" v-observe="'inview'">
+  <section class="ranking fade-enter-from" v-observe="'inview'" style="scroll-margin-top: 120px;">
     <div class="ranking-title">
       <div>松江城攻略室<br>鉄壁の城を攻略せよ!!</div>
       <h2>スコアボード</h2>

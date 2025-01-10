@@ -1,5 +1,5 @@
 <template>
-  <section style="padding-top: 8%;"> 
+  <section style="padding-top: 8%; scroll-margin-top: 40px;"> 
     <div class="guide fade-enter-from" v-observe="'inview'">
       <h2 class="guide-title">時代案内人・若武者隊</h2>
       <div class="guide-content">

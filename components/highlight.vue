@@ -125,7 +125,7 @@
         .highlight-content-name {
           position: absolute;
           top: 5%;
-          left: 0;
+          left: 2px;
           background-image: url('/img/highlight/highlightFlame2.jpg');
           width: 110px;
           height: 32px;

@@ -36,7 +36,7 @@
           ランキングトップを狙ってみよう！<br><br>
 
           シークレットステージ<br>
-          2025年2月25日～2026年3月31の期間中、<br>
+          2025年2月25日～2026年3月31日の期間中、<br>
           松江城内に設置されている二次元バーコードを読み取ると、<br>
           シークレットステージ「隠ステージ」が出現！<br>
           全ステージクリアして。松江城を攻略しよう！
@@ -135,6 +135,7 @@ export default {
 <style lang="scss" scoped>
 section {
   position: relative;
+  scroll-margin-top: 50px;
   .NinjaClimb1 {
     position: absolute;
     top: 50px;
