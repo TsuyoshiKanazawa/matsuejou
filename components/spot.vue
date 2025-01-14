@@ -1,5 +1,5 @@
 <template>
-  <section class="spot fade-enter-from" v-observe="'inview'">
+  <section class="spot fade-enter-from" v-observe="'inview'" style="scroll-margin-top: 120px;">
     <div class="spot-title">
       <h2>周辺スポット</h2>
     </div>
