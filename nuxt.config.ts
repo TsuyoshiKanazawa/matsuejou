@@ -25,6 +25,7 @@ export default defineNuxtConfig({
         { 'http-equiv': 'x-ua-compatible', content: 'ie=edge' },
         { 'http-equiv': 'content-language', content: 'ja' },
         { hid: 'description', name: 'description', content: '島根県松江市にある国宝松江城天守が2025年7月8日「国宝指定10周年」を迎えることを記念し登場した高難易度オリジナルブラウザゲーム。松江城が誇る「防御性能の高さ」を全5ステージ＋シークレットステージで体験できるほか、松江城の見所も紹介！| 一般社団法人松江観光協会' },
+        { hid: 'keywords', name: 'keywords', content: '松江城攻略室, 松江城, 国宝, 10周年, 松江旅行, 松江観光, 現存天守, 城好き' },
         { hid: 'og:site_name', property: 'og:site_name', content: '松江城攻略室 | 国宝指定10周年記念オリジナルブラウザゲーム' },
         { hid: 'og:type', property: 'og:type', content: 'website' },
         { hid: 'og:url', property: 'og:url', content: 'https://navi.kankou-matsue.jp/matsue-castle-kouryakushitsu/' },

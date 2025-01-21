@@ -1,16 +1,16 @@
 <template>
   <header>
-    <a href="#exp" class="text-hover">松江城攻略室とは？</a>
+    <a href="#about" class="text-hover">松江城攻略室とは？</a>
     /
-    <a href="#feature" class="text-hover">松江城の特徴</a>
+    <a href="#castle" class="text-hover">松江城の特徴</a>
     /
-    <a href="#guide" class="text-hover">時代案内人・若武者隊</a>
+    <a href="#matsue-musha" class="text-hover">時代案内人・若武者隊</a>
     /
     <a href="#events" class="text-hover">関連イベント</a>
     /
-    <a href="#spot" class="text-hover">周辺スポット</a>
+    <a href="#explore" class="text-hover">周辺スポット</a>
     /
-    <a href="#ranking" class="text-hover">スコアボード</a>
+    <a href="#scoreboard" class="text-hover">スコアボード</a>
   </header>
 </template>
 

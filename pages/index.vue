@@ -4,7 +4,7 @@
       <Fv id="fv" />
       <div class="contents">
         <div class="border">
-          <Exp id="exp" />
+          <Exp id="about" />
           <div class="float">
             <div class="float-button__wrapper">
               <img src="/img/musha.png" alt="play" class="musha">
@@ -13,12 +13,12 @@
                 <p style="font-size: 30px; margin-top: -9px;">GAME PLAY</p>
               </a>
             </div>
-            <Feature id="feature" />
-            <Guide id="guide" />
+            <Feature id="castle" />
+            <Guide id="matsue-musha" />
             <Highlight id="highlight" />
             <Events id="events" />
-            <Spot id="spot" />
-            <Ranking id="ranking" />
+            <Spot id="explore" />
+            <Ranking id="scoreboard" />
           </div>
         </div>
       </div>
