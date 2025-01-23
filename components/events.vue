@@ -2,13 +2,14 @@
   <section class="events fade-enter-from" v-observe="'inview'" style="scroll-margin-top: 120px;">
     <div class="events-title">
       <h2>関連イベント</h2>
+      <p>（２０２５年）</p>
     </div>
     <div class="events-inner">
-      <p style="font-size: 14px; text-align: center; margin-bottom: 20px;">松江城天守国宝指定10周年を迎える2025年には、様々なイベントが企画されているぞ！</p>
+      <p style="font-size: 14px; text-align: center; margin-bottom: 20px;">松江城天守国宝指定１０周年を迎える２０２５年には、様々なイベントが企画されているぞ！</p>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          3月下旬～<br>
-          4月中旬
+          ３月下旬～<br>
+          ４月中旬
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
           お城まつり
@@ -19,30 +20,30 @@
       </div>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          4月5日（土）
+          ４月５日（土）
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
           松江武者行列
         </a>
         <div class="events-inner-item-text">
-          堀尾衆一行が 400 年の刻をこえて松江城に入城する様子を再現した絢爛豪華な時代絵巻！
+          堀尾衆一行が ４００ 年の刻をこえて松江城に入城する様子を再現した絢爛豪華な時代絵巻！
         </div>
       </div>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          6月28日（土）<br>
-          6月29日（日）
+          ６月２８日（土）<br>
+          ６月２９日（日）
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
           特別版お城EXPO <br>in 松江
         </a>
         <div class="events-inner-item-text">
-          2025年特別開催！城郭研究者による講演や全国の自治体出展ブースなど、老若男女が楽しめるお城の祭典を松江にて！
+          ２０２５年特別開催！城郭研究者による講演や全国の自治体出展ブースなど、老若男女が楽しめるお城の祭典を松江にて！
         </div>
       </div>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          7月下旬～<br>8月下旬（予定）
+          ７月下旬～<br>８月下旬（予定）
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
           国宝五城<br>
@@ -54,8 +55,8 @@
       </div>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          9月中旬～<br>
-          10月下旬
+          ９月中旬～<br>
+          １０月中旬
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
           松江水燈路
@@ -101,13 +102,17 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     font-size: 10px;
     margin: 0 auto;
     transform: translateY(-50%);
     color: #fff;
     h2 {
       font-size: 28px;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 8px;
     }
   }
   .events-inner {

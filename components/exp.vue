@@ -5,7 +5,7 @@
       <div class="exp-inner fade-enter-from" v-observe="'inview'">
         <p class="exp-inner__title">オリジナルブラウザゲーム</p>
         <p class="exp-inner__copy">松江城攻略室 ~鉄壁の城を攻略せよ!! ~</p>
-        <p class="exp-inner__text">島根県松江市にある国宝松江城天守が、<br>2025年7月8日に「国宝指定10周年」を迎えることを記念し登場！</p>
+        <p class="exp-inner__text">島根県松江市にある国宝松江城天守が、<br>２０２５年７月８日に「国宝指定１０周年」を迎えることを記念し登場！</p>
       </div>
       <div class="iphone-img fade-enter-from" v-observe="'inview'">
         <img src="/img/exp/iphone.png" alt="iphone" class="iphone-img__bg">
@@ -29,7 +29,7 @@
       </div>
       <div class="exp-text fade-enter-from" v-observe="'inview'">
         <p class="exp-text__content">
-          松江城が誇る「鉄壁の守備」を全5ステージ＋シークレットステージで体験できる<br>
+          松江城が誇る「鉄壁の守備」を全５ステージ＋シークレットステージで体験できる<br>
           高難易度オリジナルブラウザゲーム。<br>
 
           <span>攻略モード・無限モード</span>
@@ -37,7 +37,7 @@
           ランキングトップを狙ってみよう！<br>
 
           <span>シークレットステージ</span>
-          2025年2月25日～2026年3月31日の期間中、<br>
+          ２０２５年２月２５日～２０２６年３月３１日の期間中、<br>
           松江城内に設置されている二次元バーコードを読み取ると、<br>
           シークレットステージ「隠ステージ」が出現！<br>
           全ステージクリアして。松江城を攻略しよう！
@@ -45,7 +45,7 @@
         <img src="/img/player5.png" alt="icon" class="exp-text__icon">
       </div>
       <div class="exp-btn fade-enter-from" v-observe="'inview'">
-        <a href="/" class="exp-btn__link">
+        <a href="https://castle-game.kankou-matsue.jp/" target="_blank" class="exp-btn__link">
           GAME PLAY
         </a>
       </div>
@@ -55,12 +55,12 @@
           本ゲームをプレイするには、以下の推奨環境を満たしたPCまたはスマートフォン、および対応ブラウザが必要です。<br><br>
 
           【推奨環境】<br>
-          - Windows10／Windows11 CPU：Corei3(４コア）以上 メモリ8GB以上<br>
+          - Windows１０／Windows１１ CPU：Corei３(４コア）以上 メモリ８GB以上<br>
           - macOS 13 以降の対応機種<br><br>
 
-          - Android 10 以降：CPUオクタコア以上 メモリ4GB以上<br>
-          - iOS 18 対応機種<br>
-          - iPadOS 18 対応機種<br><br>
+          - Android １０ 以降：CPUオクタコア以上 メモリ４GB以上<br>
+          - iOS １８ 対応機種<br>
+          - iPadOS １８ 対応機種<br><br>
 
           【推奨ブラウザ】<br>
           - Safari/Chrome （最新バージョンを推奨）<br>
@@ -75,13 +75,13 @@
       <div class="feature fade-enter-from" v-observe="'inview'">
         <p>
           松江城は江戸時代に全国170箇所もあったと言われるお城のなかで、<br>
-          現在は12城しか残っていない江戸時代またはそれ以前に建造された「現存天守」のひとつ。<br>
-          松江城天守は2015年7月8日に国宝に指定され、2025年に国宝指定から10周年を迎えます。
+          現在は１２城しか残っていない江戸時代またはそれ以前に建造された「現存天守」のひとつ。<br>
+          松江城天守は２０１５年７月８日に国宝に指定され、２０２５年に国宝指定から１０周年を迎えます。
         </p>
         <div class="feature-logo">
           <img src="/img/exp/matsuejouLogo.jpg" alt="feature">
           <p class="feature-logo__text">松江城天守<br>
-            国宝10周年記念<br>
+            国宝１０周年記念<br>
             ロゴマーク
           </p>
         </div>
@@ -302,8 +302,8 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     width: 800px;
-    height: 869px;
-    font-size: 12px;
+    height: 966px;
+    font-size: 14px;
     text-align: center;
     line-height: 1.9;
     margin: 2% auto;
@@ -311,13 +311,13 @@ section {
       margin: 3% auto 2%;
       position: relative;
       img {
-        width: 310px;
+        width: 402px;
       }
       .feature-logo__text {
         position: absolute;
         bottom: 10px;
-        right: 115px;
-        font-size: 8px;
+        right: 40px;
+        font-size: 12px;
         text-align: left;
       }
     }

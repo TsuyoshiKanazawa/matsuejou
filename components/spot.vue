@@ -5,39 +5,39 @@
     </div>
     <div class="spot-inner">
       <p style="font-size: 14px;  margin: 0 auto 20px;">松江城のお堀沿いにも見どころが沢山！城とあわせて巡ると、より楽しいぞ！</p>
-      <div href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27673" target="_blank" class="spot-inner-content">
+      <div class="spot-inner-content">
         <img src="/img/spot/rekishikan.jpg" alt="spot">
         <div class="spot-inner-content-title">
           松江歴史館
         </div>
-        <a href="/" target="_blank" class="spot-btn">
+        <a href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27673" target="_blank" class="spot-btn">
           詳細はこちら
         </a>
       </div>
-      <div href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27614" target="_blank" class="spot-inner-content">
+      <div class="spot-inner-content">
         <img src="/img/spot/horikawayuuransen.jpg" alt="spot">
         <div class="spot-inner-content-title">
           堀川遊覧船
         </div>
-        <a href="/" target="_blank" class="spot-btn">
+        <a href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27614" target="_blank" class="spot-btn">
           詳細はこちら
         </a>
       </div>
-      <div href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27636" target="_blank" class="spot-inner-content">
+      <div class="spot-inner-content">
         <img src="/img/spot/bukeyashiki.jpg" alt="spot">
         <div class="spot-inner-content-title">
           武家屋敷
         </div>
-        <a href="/" target="_blank" class="spot-btn">
+        <a href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27636" target="_blank" class="spot-btn">
           詳細はこちら
         </a>
       </div>
-      <div href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27888" target="_blank" class="spot-inner-content">
+      <div class="spot-inner-content">
         <img src="/img/spot/meimeian.jpg" alt="spot">
         <div class="spot-inner-content-title">
           明々庵
         </div>
-        <a href="/" target="_blank" class="spot-btn">
+        <a href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27888" target="_blank" class="spot-btn">
           詳細はこちら
         </a>
       </div>

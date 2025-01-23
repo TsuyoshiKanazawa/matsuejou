@@ -6,12 +6,12 @@
     </div>
     <div class="ranking-text">
       各ステージの「無限モード」における優秀なプレイヤーとスコアを発表するぞ!!<br>
-      ※スコアボードは毎時00分に更新されます。
+      ※スコアボードは毎時００分に更新されます。
     </div>
     <div class="ranking-inner">
       <div class="stageSelector">
         <div class="stageSelector__item" @click="stage = 'stage:1'" :class="{ active: stage === 'stage:1' }">
-          <p class="stageSelector__item__stage">其ノ一</p><p class="stageSelector__item__stageName"> お堀</p>
+          <p class="stageSelector__item__stage">其ノ一</p><p class="stageSelector__item__stageName"> 水堀</p>
         </div>
         <div class="stageSelector__item" @click="stage = 'stage:2'" :class="{ active: stage === 'stage:2' }">
           <p class="stageSelector__item__stage">其ノ二</p><p class="stageSelector__item__stageName"> 石垣</p>
@@ -53,6 +53,10 @@ export default {
   setup() {
     const rankings = ref([]);
 
+    const toFullWidth = (num) => {
+      return num.toString().replace(/[0-9]/g, (d) => String.fromCharCode(d.charCodeAt(0) + 0xFEE0));
+    };
+
     onMounted(async () => {
       try {
         // キャッシュを無視するために、現在のタイムスタンプをクエリパラメータとして追加
@@ -66,6 +70,7 @@ export default {
 
     return {
       rankings,
+      toFullWidth
     }
   },
   data() {
@@ -105,7 +110,7 @@ export default {
     }
   }
   .ranking-text {
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     margin: -2% auto 2%;
     line-height: 2;

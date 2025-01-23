@@ -15,7 +15,7 @@
           <p class="content-explain">
             豊臣秀吉に仕え、一代で大名に昇りつめた堀尾吉晴。<br>
             戦場での豊富な経験と多くの武功を積んだ彼は、温厚な人柄と卓越した戦略眼で知られている。<br>
-            1607年、出雲・隠岐の領地を守るため、堅牢な防御を備えた松江城の築城に着手しその後の城下町発展の礎を築いた。<br>
+            １６０７年、出雲・隠岐の領地を守るため、堅牢な防御を備えた松江城の築城に着手しその後の城下町発展の礎を築いた。<br>
             そのことから「松江開府の祖」と呼ばれる。
           </p>
         </div>
@@ -24,7 +24,7 @@
       <div class="feature-content">
         <img src="/img/feature/ohori.jpg" alt="feature" class="content-image">
         <div class="content-text">
-          <h1 class="content-title">お堀</h1>
+          <h1 class="content-title">水堀</h1>
           <div class="content-copy">
             城を囲む水の防壁
           </div>
@@ -35,7 +35,7 @@
             <h3 class="content-overview-title">ゲーム概要</h3>
             <p class="content-overview-text">
               様々な障害物を避けながら、<br>
-              城内への侵入を目指してお堀を攻略せよ!!
+              城内への侵入を目指して水堀を攻略せよ!!
             </p>
           </div>
         </div>
@@ -109,7 +109,7 @@
             堂々たる松江城の象徴
           </div>
           <p class="content-explain">
-            城山の中心にそびえ立つ松江のシンボル。全国に12城しか残っていない「現存天守」の1つであり、高さ約30メートルの威容は防御の拠点でありながら、美しい黒の下見板張りと白壁が見事に調和し、戦略性と美しさを兼ね備える。
+            城山の中心にそびえ立つ松江のシンボル。全国に１２城しか残っていない「現存天守」の１つであり、高さ約３０メートルの威容は防御の拠点でありながら、美しい黒の下見板張りと白壁が見事に調和し、戦略性と美しさを兼ね備える。
           </p>
           <div class="content-overview">
             <h3 class="content-overview-title">ゲーム概要</h3>

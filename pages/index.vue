@@ -8,7 +8,7 @@
           <div class="float">
             <div class="float-button__wrapper">
               <img src="/img/musha.png" alt="play" class="musha">
-              <a class="float-button">
+              <a class="float-button" href="#about">
                 <p style="font-size: 14px;">鉄壁の城を攻略せよ!!</p>
                 <p style="font-size: 30px; margin-top: -9px;">GAME PLAY</p>
               </a>
