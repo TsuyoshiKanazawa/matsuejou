@@ -22,7 +22,6 @@
           4月5日（土）
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
-          2025<br>
           松江武者行列
         </a>
         <div class="events-inner-item-text">
@@ -38,7 +37,7 @@
           特別版お城EXPO <br>in 松江
         </a>
         <div class="events-inner-item-text">
-          城郭研究者による講演や全国の自治体出展ブースなど、老若男女が楽しめるお城の祭典を松江にて！
+          2025年特別開催！城郭研究者による講演や全国の自治体出展ブースなど、老若男女が楽しめるお城の祭典を松江にて！
         </div>
       </div>
       <div class="events-inner-item">
