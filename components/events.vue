@@ -4,9 +4,11 @@
       <h2>関連イベント</h2>
     </div>
     <div class="events-inner">
+      <p style="font-size: 14px; text-align: center; margin-bottom: 20px;">松江城天守国宝指定10周年を迎える2025年には、様々なイベントが企画されているぞ！</p>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          3月下旬～4月中旬
+          3月下旬～<br>
+          4月中旬
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
           お城まつり
@@ -20,7 +22,8 @@
           4月5日（土）
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
-          2025松江武者行列
+          2025<br>
+          松江武者行列
         </a>
         <div class="events-inner-item-text">
           堀尾衆一行が 400 年の刻をこえて松江城に入城する様子を再現した絢爛豪華な時代絵巻！
@@ -32,7 +35,7 @@
           6月29日（日）
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
-          特別版お城EXPO in 松江
+          特別版お城EXPO <br>in 松江
         </a>
         <div class="events-inner-item-text">
           城郭研究者による講演や全国の自治体出展ブースなど、老若男女が楽しめるお城の祭典を松江にて！
@@ -40,10 +43,11 @@
       </div>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          7月下旬～8月下旬（予定）
+          7月下旬～<br>8月下旬（予定）
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
-          国宝五城天守合同床磨き
+          国宝五城<br>
+          天守合同床磨き
         </a>
         <div class="events-inner-item-text">
           松江城を守る会主催の「親子で国宝松江城天守床磨き」を国宝五城天守合同床磨きとして開催します！
@@ -51,7 +55,8 @@
       </div>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          9月中旬～10月下旬
+          9月中旬～<br>
+          10月下旬
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
           松江水燈路
@@ -85,11 +90,11 @@ export default {
   background-size: 100% 100%;
   background-position: center;
   width: 800px;
-  height: 448px;
+  height: 691px;
   margin: 7% auto 0%;
   position: relative;
   .events-title {
-    background-image: url('/img/rankingTitle.png');
+    background-image: url('/img/subtract.png');
     background-size: 100% 100%;
     background-position: center;
     width: 440px;
@@ -101,19 +106,21 @@ export default {
     font-size: 10px;
     margin: 0 auto;
     transform: translateY(-50%);
+    color: #fff;
     h2 {
       font-size: 28px;
     }
   }
   .events-inner {
     .events-inner-item {
-      font-size: 10px;
+      font-size: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
       border-top: 1px solid #000;
-      height: 50px;
+      height: 90px;
+      line-height: 1.5;
       &:last-child {
         border-bottom: 1px solid #000;
       }
@@ -122,6 +129,7 @@ export default {
       }
       .events-inner-item-title {
         width: 28%;
+        font-size: 18px;
         &:hover {
           text-decoration: underline;
         }

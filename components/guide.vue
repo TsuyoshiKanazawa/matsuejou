@@ -14,11 +14,11 @@
           </a>
         </div>
       </div>
-      <div class="guide-content" style="margin-top: 25px;">
+      <div class="guide-content" style="margin-top: 40px;">
         <div class="guide-content-text">
           <h3 class="guide-content-title left">まつえ若武者隊</h3>
           <p class="guide-content-text left">
-            四〇〇年の時を越え、平成の世に甦った武者たち。松江から日の本を元気にするため、県外のPRステージや城中に出陣し、武者のまち「松江」を紹介！土曜日、日曜日に松江城に行けば、会えるかも…！
+            四〇〇年の時を越え、現世に蘇った武者たち。松江から日の本を元気にするため、県外のPRステージや城中に出陣し、武者のまち「松江」を紹介！土曜日、日曜日に松江城に行けば、会えるかも…！
           </p>
           <a href="https://matsue-musya.com/category/profile" target="_blank" class="guide-content-link left">
             <p>詳細はこちら</p>
@@ -27,6 +27,7 @@
         <img src="/img/guide/guideContent2.jpg" alt="guide-content">
       </div>
       <img src="/img/guide/spear_new2.png" alt="feature" class="ninja">
+      <Highlight />
     </div>
   </section>
 </template>
@@ -38,7 +39,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 800px;
-  height: 573px;
+  height: 2070px;
   font-size: 12px;
   line-height: 2;
   margin: 0 auto 0;
@@ -62,7 +63,8 @@
     justify-content: center;
     margin-top: 35px;
     img {
-      width: 381px;
+      width: 380px;
+      height: 210px;
       border: 2px solid #002D18;
     }
     .guide-content-text {
@@ -71,7 +73,7 @@
         font-size: 20px;
         border: 2px solid #002D18;
         padding-left: 20px;
-        margin-top: 8%;
+        margin-top: 4%;
         &.right {
           border-left: none;
         }
@@ -80,10 +82,10 @@
         }
       }
       .guide-content-text {
-        font-size: 10px;
-        line-height: 2;
+        font-size: 14px;
+        line-height: 1.8;
         padding: 0 10px 0 20px;
-        margin-top: 5%;
+        margin-top: 2%;
         &.left {
           padding-left: 0;
           padding-right: 20px;
@@ -121,9 +123,8 @@
   }
   .ninja {
     width: 71px;
-    position: absolute;
-    bottom: 6px;
-    right: 4.5%;
+    display: block;
+    margin: -60px -20px 0 auto;
   }
 }
 </style>

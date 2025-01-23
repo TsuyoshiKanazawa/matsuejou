@@ -5,6 +5,7 @@
       <div class="exp-inner fade-enter-from" v-observe="'inview'">
         <p class="exp-inner__title">オリジナルブラウザゲーム</p>
         <p class="exp-inner__copy">松江城攻略室 ~鉄壁の城を攻略せよ!! ~</p>
+        <p class="exp-inner__text">島根県松江市にある国宝松江城天守が、<br>2025年7月8日に「国宝指定10周年」を迎えることを記念し登場！</p>
       </div>
       <div class="iphone-img fade-enter-from" v-observe="'inview'">
         <img src="/img/exp/iphone.png" alt="iphone" class="iphone-img__bg">
@@ -29,13 +30,13 @@
       <div class="exp-text fade-enter-from" v-observe="'inview'">
         <p class="exp-text__content">
           松江城が誇る「鉄壁の守備」を全5ステージ＋シークレットステージで体験できる<br>
-          高難易度オリジナルブラウザゲーム。<br><br>
+          高難易度オリジナルブラウザゲーム。<br>
 
-          攻略モード・無限モード<br>
+          <span>攻略モード・無限モード</span>
           「攻略モード」で本丸攻略を目指し、腕に自信のある方は「無限モード」をプレイして<br>
-          ランキングトップを狙ってみよう！<br><br>
+          ランキングトップを狙ってみよう！<br>
 
-          シークレットステージ<br>
+          <span>シークレットステージ</span>
           2025年2月25日～2026年3月31日の期間中、<br>
           松江城内に設置されている二次元バーコードを読み取ると、<br>
           シークレットステージ「隠ステージ」が出現！<br>
@@ -78,7 +79,11 @@
           松江城天守は2015年7月8日に国宝に指定され、2025年に国宝指定から10周年を迎えます。
         </p>
         <div class="feature-logo">
-          <img src="/img/exp/matsuejouLogo.png" alt="feature">
+          <img src="/img/exp/matsuejouLogo.jpg" alt="feature">
+          <p class="feature-logo__text">松江城天守<br>
+            国宝10周年記念<br>
+            ロゴマーク
+          </p>
         </div>
         <p>
           戦乱の時代で一切の攻城を受けずに現代に残った松江城は、<br>
@@ -183,15 +188,19 @@ section {
     margin: 0 auto;
   }
   .exp-inner {
-    margin-top: 2%;
+    margin: 2% 0 2%;
     text-align: center;
+    font-size: 16px;
     .exp-inner__title {
-      font-size: 16px;
       margin-top: 3%;
     }
     .exp-inner__copy {
-      font-size: 20px;
+      font-size: 30px;
       margin-top: 1%;
+    }
+    .exp-inner__text {
+      margin-top: 1%;
+      line-height: 1.8;
     }
   }
   .iphone-img {
@@ -207,7 +216,7 @@ section {
     }
     .iphone-img__in {
       position: absolute;
-      top: 7.2%;
+      top: 7.1%;
       left: 3.5%;
       width: 595px;
     }
@@ -222,13 +231,26 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     width: 800px;
-    height: 401px;
+    height: 445px;
     margin: 4% auto 0;
     text-align: center;
     line-height: 2;
     padding-top: 4%;
     font-size: 14px;
     position: relative;
+    .exp-text__content {
+      span {
+        background-color: #006837;
+        color: #fff;
+        padding: 1% 2%;
+        border: 2px solid #002D18;
+        display: block;
+        margin: 2% auto 1%;
+        width: 232px;
+        height: 38px;
+        line-height: 19px;
+      }
+    }
     .exp-text__icon {
       position: absolute;
       bottom: 8px;
@@ -264,13 +286,14 @@ section {
     }
   }
   .exp-env {
-    background-color: #fff;
+    background-color: #E6B424;
     width: 800px;
-    height: 100px;
+    height:65px;
     margin: 0 auto;
-    padding: 2% 6%;
+    padding: 3% 6%;
     font-size: 10px;
     overflow-y: scroll;
+    color: #fff;
   }
   .feature {
     padding: 4%;
@@ -282,37 +305,44 @@ section {
     height: 869px;
     font-size: 12px;
     text-align: center;
-    line-height: 2;
+    line-height: 1.9;
     margin: 2% auto;
     .feature-logo {
-      margin: 3% auto;
+      margin: 3% auto 2%;
+      position: relative;
       img {
         width: 310px;
+      }
+      .feature-logo__text {
+        position: absolute;
+        bottom: 10px;
+        right: 115px;
+        font-size: 8px;
+        text-align: left;
       }
     }
     .feature-image {
       width: 640px;
-      margin: 2% auto;
-      border: 2px solid #002D18;
+      margin: 1.8% auto;
     }
   }
 }
 // スクロールバーの幅
 ::-webkit-scrollbar {
-  width: 11px;
+  width: 6px;
 }
 // スクロールバーのトラック（背景）
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: #E6B424;
 }
 // スクロールバーのサム（ドラッグできる部分）
 ::-webkit-scrollbar-thumb {
-  background-color: #666;
+  background-color: #fff;
   border-radius: 10px;
   border: 3px solid #fff;
 }
 // ホバー時のスクロールバーのサムの色 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #444;
+  background-color: #fff;
 }
 </style>

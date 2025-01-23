@@ -8,9 +8,9 @@
       <div class="feature-content" style="margin-top: 0;">
         <img src="/img/feature/yoshiharu.jpg" alt="feature" class="content-image">
         <div class="content-text">
-          <h1 class="content-title yellow" style="margin-top: 10%;">堀尾 吉晴</h1>
+          <h1 class="content-title yellow">堀尾 吉晴</h1>
           <div class="content-copy">
-            城攻めの経験と戦略に長けた名将
+            城攻めの経験と戦略に<br>長けた名将
           </div>
           <p class="content-explain">
             豊臣秀吉に仕え、一代で大名に昇りつめた堀尾吉晴。<br>
@@ -19,7 +19,7 @@
             そのことから「松江開府の祖」と呼ばれる。
           </p>
         </div>
-        <img src="/img/feature/yoshiharuIcon.png" alt="yoshiharuIcon" class="content-icon">
+        <img src="/img/feature/yoshiharuIcon.png" alt="yoshiharuIcon" class="content-icon yoshiharu">
       </div>
       <div class="feature-content">
         <img src="/img/feature/ohori.jpg" alt="feature" class="content-image">
@@ -29,7 +29,7 @@
             城を囲む水の防壁
           </div>
           <p class="content-explain">
-            築城時からほぼ同じ形を残す城全体を囲む広大な水路で、外敵の侵入を阻む強力な防壁の役割を担った。豊かな水量が保たれたこの堀は、戦略的にも巧みに設計され、周囲の自然景観と調和する美しい水辺となっている。
+            築城時からほぼ同じ形を残す城全体を囲む広大な水路で、外敵の侵入を阻む強力な防壁の役割を担った。豊かな水量が保たれたこの堀は、戦略的にも巧みに設計され、今では周囲の自然景観と調和する美しい水辺となっている。
           </p>
           <div class="content-overview">
             <h3 class="content-overview-title">ゲーム概要</h3>
@@ -39,7 +39,7 @@
             </p>
           </div>
         </div>
-        <img src="/img/feature/ohoriIcon.png" alt="ohoriIcon" class="content-icon">
+        <img src="/img/feature/ohoriIcon.png" alt="ohoriIcon" class="content-icon ohori">
       </div>
       <div class="feature-content">
         <img src="/img/feature/ishigaki.jpg" alt="feature" class="content-image">
@@ -49,7 +49,7 @@
             堅牢な石の要塞
           </div>
           <p class="content-explain">
-            隙間なく積み上げられた堅牢な構造で、敵の侵入を阻む防御の要を担った。自然の地形を巧みに利用した石垣は、緩やかな傾斜でありながら圧倒的な威圧感を放ち、見る者に松江城の力強さを感じさせる。
+            隙間なく積み上げられた堅牢な構造で、敵の侵入を阻む防御の要を担った。地形を巧みに利用した石垣は、緩やかな傾斜でありながら圧倒的な威圧感を放ち、見る者に松江城の力強さを感じさせる。
           </p>
           <div class="content-overview">
             <h3 class="content-overview-title">ゲーム概要</h3>
@@ -59,7 +59,7 @@
             </p>
           </div>
         </div>
-        <img src="/img/feature/ishigakiIcon.png" alt="ishigakiIcon" class="content-icon">
+        <img src="/img/feature/ishigakiIcon.png" alt="ishigakiIcon" class="content-icon ishigaki">
       </div>
       <div class="feature-content">
         <img src="/img/feature/ootemon.jpg" alt="feature" class="content-image">
@@ -79,7 +79,7 @@
             </p>
           </div>
         </div>
-        <img src="/img/feature/ootemonIcon.png" alt="ootemonIcon" class="content-icon">
+        <img src="/img/feature/ootemonIcon.png" alt="ootemonIcon" class="content-icon ootemon">
       </div>
       <div class="feature-content">
         <img src="/img/feature/tsukeyagura.jpg" alt="feature" class="content-image">
@@ -89,9 +89,9 @@
             天守を守る最終防衛機能
           </div>
           <p class="content-explain">
-            附櫓（つけやぐら）は、天守の入口に配置された重要な防衛施設で、高い位置から周囲を見渡せる構造となっており、敵の動きをいち早く察知することが可能。堅牢で機能的な附櫓は、天守の守りを一層強化し、城を守る最後の砦として機能する。
+            附櫓（つけやぐら）は、天守の入口に配置された重要な防衛施設。堅牢で機能的な附櫓は、天守の守りを一層強化し、城を守る最後の砦として機能する。
           </p>
-          <div class="content-overview" style="margin-top: 13px;">
+          <div class="content-overview">
             <h3 class="content-overview-title">ゲーム概要</h3>
             <p class="content-overview-text">
               全方位からの激しい攻撃を避けながら、<br>
@@ -99,7 +99,7 @@
             </p>
           </div>
         </div>
-        <img src="/img/feature/tsukeyaguraIcon.png" alt="tsukeyaguraIcon" class="content-icon">
+        <img src="/img/feature/tsukeyaguraIcon.png" alt="tsukeyaguraIcon" class="content-icon tsukeyagura">
       </div>
       <div class="feature-content">
         <img src="/img/feature/tensyu.jpg" alt="feature" class="content-image">
@@ -109,9 +109,9 @@
             堂々たる松江城の象徴
           </div>
           <p class="content-explain">
-            城山の中心にそびえ立つ松江のシンボル。現存する唯一の「正統天守」であり、高さ約30メートルの威容は防御の拠点でありながら、美しい黒の下見板張りと白壁が見事に調和し、戦略性と美しさを兼ね備える。
+            城山の中心にそびえ立つ松江のシンボル。全国に12城しか残っていない「現存天守」の1つであり、高さ約30メートルの威容は防御の拠点でありながら、美しい黒の下見板張りと白壁が見事に調和し、戦略性と美しさを兼ね備える。
           </p>
-          <div class="content-overview" style="margin-top: 50px;">
+          <div class="content-overview">
             <h3 class="content-overview-title">ゲーム概要</h3>
             <p class="content-overview-text">
               迫りくるたくさんの兵士を攻撃し、<br>
@@ -119,7 +119,7 @@
             </p>
           </div>
         </div>
-        <img src="/img/feature/tensyuIcon.png" alt="tensyuIcon" class="content-icon">
+        <img src="/img/feature/tensyuIcon.png" alt="tensyuIcon" class="content-icon tensyu">
       </div>
       <div class="feature-content">
         <img src="/img/feature/ido.jpg" alt="feature" class="content-image">
@@ -145,7 +145,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 800px;
-  height: 2303px;
+  height: 2816px;
   font-size: 12px;
   line-height: 2;
   margin: 0 auto;
@@ -178,7 +178,6 @@
   }
   .feature-content {
     width: 636px;
-    height: 286px;
     margin: 0 auto;
     margin-top: 25px;
     background-image: url('/img/feature/featureFlame.jpg');
@@ -190,6 +189,7 @@
     position: relative;
     .content-image {
       width: 285px;
+      height: 285px;
       border: 2px solid #002D18;
     }
     .content-title {
@@ -207,47 +207,70 @@
       }
     }
     .content-copy {
-      font-size: 16px;
+      font-size: 20px;
       margin-top: 1%;
-      width: 284px;
+      width: 270px;
       padding-left: 20px;
     }
     .content-explain {
-      font-size: 10px;
+      font-size: 14px;
       width: 310px;
       padding-left: 20px;
       line-height: 1.7;
     }
     .content-overview {
-      margin-top: 28px;
-      font-size: 10px;
+      margin: 10px 0;
+      font-size: 14px;
       width: 284px;
-      height: 103px;
       padding-left: 20px;
       line-height: 1.7;
       .content-overview-title {
-        font-size: 10px;
+        font-size: 12px;
         color: #002D18;
         border: 1px solid #002D18;
-        width: 70px;
+        width: 84px;
         text-align: center;
+        margin-bottom: 5px;
       }
       .content-overview-text {
-        font-size: 10px;
         line-height: 1.7;
+        width: 284px;
       }
     }
     .content-icon {
       width: 72px;
       position: absolute;
-      top: 4.5%;
-      right: 2%;
+      top: -3%;
+      right: -2%;
+      &.yoshiharu {
+        width: 159px;
+      }
+      &.ohori {
+        width: 173px;
+      }
+      &.ishigaki {
+        width: 115px;
+        right: 2%;
+      }
+      &.ootemon {
+        width: 143px;
+      }
+      &.tsukeyagura {
+        width: 118px;
+        top: 0%;
+        right:-3%;
+      }
+      &.tensyu {
+        width: 103px;
+        top: 0%;
+        right: 0%;
+      }
     }
   }
   .ninja {
     width: 60px;
     position: absolute;
-    bottom: 8px;
+    bottom: 50px;
     left: 4.5%;
   }
 }

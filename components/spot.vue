@@ -4,30 +4,44 @@
       <h2>周辺スポット</h2>
     </div>
     <div class="spot-inner">
-      <a href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27673" target="_blank" class="spot-inner-content">
+      <p style="font-size: 14px;  margin: 0 auto 20px;">松江城のお堀沿いにも見どころが沢山！城とあわせて巡ると、より楽しいぞ！</p>
+      <div href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27673" target="_blank" class="spot-inner-content">
         <img src="/img/spot/rekishikan.jpg" alt="spot">
         <div class="spot-inner-content-title">
           松江歴史館
         </div>
-      </a>
-      <a href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27614" target="_blank" class="spot-inner-content">
+        <a href="/" target="_blank" class="spot-btn">
+          詳細はこちら
+        </a>
+      </div>
+      <div href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27614" target="_blank" class="spot-inner-content">
         <img src="/img/spot/horikawayuuransen.jpg" alt="spot">
         <div class="spot-inner-content-title">
           堀川遊覧船
         </div>
-      </a>
-      <a href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27636" target="_blank" class="spot-inner-content">
+        <a href="/" target="_blank" class="spot-btn">
+          詳細はこちら
+        </a>
+      </div>
+      <div href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27636" target="_blank" class="spot-inner-content">
         <img src="/img/spot/bukeyashiki.jpg" alt="spot">
         <div class="spot-inner-content-title">
           武家屋敷
         </div>
-      </a>
-      <a href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27888" target="_blank" class="spot-inner-content">
+        <a href="/" target="_blank" class="spot-btn">
+          詳細はこちら
+        </a>
+      </div>
+      <div href="https://www.kankou-matsue.jp/kankou/desc/?cat=%E8%A6%B3%E5%85%89%E6%96%BD%E8%A8%AD&spot=27888" target="_blank" class="spot-inner-content">
         <img src="/img/spot/meimeian.jpg" alt="spot">
         <div class="spot-inner-content-title">
           明々庵
         </div>
-      </a>
+        <a href="/" target="_blank" class="spot-btn">
+          詳細はこちら
+        </a>
+      </div>
+      <img src="/img/spot/armor_new1.png" alt="ninja" class="ninja">
     </div>
   </section>
 </template>
@@ -48,11 +62,11 @@ export default {
   background-size: 100% 100%;
   background-position: center;
   width: 800px;
-  height: 668px;
+  height: 757px;
   margin: 7% auto 0%;
   position: relative;
   .spot-title {
-    background-image: url('/img/rankingTitle.png');
+    background-image: url('/img/subtract.png');
     background-size: 100% 100%;
     background-position: center;
     width: 440px;
@@ -64,6 +78,7 @@ export default {
     font-size: 10px;
     margin: 0 auto;
     transform: translateY(-50%);
+    color: #fff;
     h2 {
       font-size: 28px;
     }
@@ -73,10 +88,11 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
     .spot-inner-content {
-      margin-bottom: 30px;
+      margin: 5px 0 50px;
       border: 2px solid #002D18;
       position: relative;
       img {
+        display: block;
         width: 340px;
       }
       .spot-inner-content-title {
@@ -92,13 +108,35 @@ export default {
         height: 40px;
         line-height: 40px;
       }
+      .spot-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 14px;
+        color: #fff;
+        background-color: #E68224;
+        width: 130px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        transform: translateY(50%);
+        border-radius: 80px;
+        border: 2px solid #000;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+        transition: color 0.3s, background-color 0.1s, transform 0.1s;
+        &:hover {
+          background-color: #fff;
+          color: #E68224;
+          transform: translateY(40%);
+        }
+      }
     }
   }
 
   .ninja {
     position: absolute;
     bottom: 1.8%;
-    right: 0;
+    left: 3%;
   }
 }
 </style>

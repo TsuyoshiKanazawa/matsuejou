@@ -61,7 +61,7 @@ img {
 
 .text-hover {
   &:hover {
-    color: #E6B424;
+    color: #E6B424 !important;
     transition: color 0.1s;
   }
 }

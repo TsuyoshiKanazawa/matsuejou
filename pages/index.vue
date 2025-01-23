@@ -4,7 +4,7 @@
       <Fv id="fv" />
       <div class="contents">
         <div class="border">
-          <Exp id="about" />
+          <Exp id="about" loading="lazy" />
           <div class="float">
             <div class="float-button__wrapper">
               <img src="/img/musha.png" alt="play" class="musha">
@@ -13,12 +13,12 @@
                 <p style="font-size: 30px; margin-top: -9px;">GAME PLAY</p>
               </a>
             </div>
-            <Feature id="castle" />
-            <Guide id="matsue-musha" />
-            <Highlight id="highlight" />
-            <Events id="events" />
-            <Spot id="explore" />
-            <Ranking id="scoreboard" />
+            <Feature id="castle" loading="lazy" />
+            <Guide id="matsue-musha" loading="lazy" />
+            <!--<Highlight id="highlight" loading="lazy" />-->
+            <Events id="events" loading="lazy" />
+            <Spot id="explore" loading="lazy" />
+            <Ranking id="scoreboard" loading="lazy" />
           </div>
         </div>
       </div>
@@ -32,6 +32,64 @@ export default {
     return {
     }
   },
+  mounted() {
+    if (window.location.hash === '#castle') {
+      // DOMの描画が完了した後に、対象要素へスクロールさせる
+      this.$nextTick(() => {
+        const scoreboardElement = document.getElementById('castle')
+        if (scoreboardElement) {
+          scoreboardElement.scrollIntoView({
+            block: 'start'      // 要素の先頭までスクロール
+          })
+        }
+      })
+    } else if (window.location.hash === '#matsue-musha') {
+      this.$nextTick(() => {
+        const matsueMushaElement = document.getElementById('matsue-musha')
+        if (matsueMushaElement) {
+          matsueMushaElement.scrollIntoView({
+            block: 'start'
+          })
+        }
+      })
+    } else if (window.location.hash === '#highlight') {
+      this.$nextTick(() => {
+        const castleElement = document.getElementById('highlight')
+        if (castleElement) {
+          castleElement.scrollIntoView({
+            block: 'start'
+          })
+        }
+      })
+    } else if (window.location.hash === '#events') {
+      this.$nextTick(() => {
+        const aboutElement = document.getElementById('events')
+        if (aboutElement) {
+          aboutElement.scrollIntoView({
+            block: 'start'
+          })
+        }
+      })
+    } else if (window.location.hash === '#explore') {
+      this.$nextTick(() => {
+        const eventsElement = document.getElementById('explore')
+        if (eventsElement) {
+          eventsElement.scrollIntoView({
+            block: 'start'
+          })
+        }
+      })
+    } else if (window.location.hash === '#scoreboard') {
+      this.$nextTick(() => {
+        const eventsElement = document.getElementById('scoreboard')
+        if (eventsElement) {
+          eventsElement.scrollIntoView({
+            block: 'start'
+          })
+        }
+      })
+    }
+  }
 }
 </script>
 

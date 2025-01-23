@@ -86,7 +86,7 @@ export default {
   margin: 7% auto 0%;
 
   .ranking-title {
-    background-image: url('/img/rankingTitle.png');
+    background-image: url('/img/subtract.png');
     background-size: 100% 100%;
     background-position: center;
     width: 440px;
@@ -94,10 +94,12 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    font-size: 10px;
+    gap: 5px;
+    font-size: 14px;
     margin: 0 auto;
     transform: translateY(-50%);
+    color: #fff;
+    line-height: 1.5;
     h2 {
       font-size: 28px;
     }
@@ -105,7 +107,8 @@ export default {
   .ranking-text {
     font-size: 12px;
     text-align: center;
-    margin: 0 auto 4%;
+    margin: -2% auto 2%;
+    line-height: 2;
   }
   .ranking-inner {
     background-image: url('/img/rankingBoardBG.png');
