@@ -100,10 +100,10 @@ export default {
   justify-content: center;
   .contents {
     position: relative;
-    padding-bottom: 6%;
     .border {
-      border-left: 3px solid #fff;
-      border-right: 3px solid #fff;
+      border-left: 3px solid #006837;
+      border-right: 3px solid #006837;
+      padding-bottom: 6%;
       .float-button__wrapper {
         position: sticky;
         top: 80%;
