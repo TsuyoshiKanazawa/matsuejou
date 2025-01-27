@@ -56,10 +56,10 @@
           </div>
           <div class="highlight-content">
             <img src="/img/highlight/kitourei.jpg" class="highlight-content-img" alt="kitourei">
-            <div class="highlight-content-name" style="width: 135px;">祈祷札<small>（きとうふだ）</small></div>
+            <div class="highlight-content-name">祈祷札</div>
             <div class="highlight-content-text">
               <img src="/img/highlight/kitoureiIcon.png" class="highlight-content-icon" alt="kitoureiIcon" style="top: -60%;">
-              天守内では松江城天守を国宝へと押し上げた貴重な史料のれぷりかが見れるぞ！
+              天守内では松江城天守を国宝へと押し上げた貴重な史料「祈祷札（きとうふだ）」のれぷりかが見れるぞ！
             </div>
           </div>
         </div>

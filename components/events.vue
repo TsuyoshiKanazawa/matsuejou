@@ -8,10 +8,10 @@
       <p style="font-size: 14px; text-align: center; margin-bottom: 20px;">松江城天守国宝指定１０周年を迎える２０２５年には、様々なイベントが企画されているぞ！</p>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          ３月下旬～<br>
-          ４月中旬
+          ３月２６日（水）～<br>
+          ４月９日（水）
         </div>
-        <a href="/" target="_blank" class="events-inner-item-title">
+        <a href="https://www.kankou-matsue.jp/event_calendar/desc/?event=110629" target="_blank" class="events-inner-item-title">
           お城まつり
         </a>
         <div class="events-inner-item-text">
@@ -22,7 +22,7 @@
         <div class="events-inner-item-day">
           ４月５日（土）
         </div>
-        <a href="/" target="_blank" class="events-inner-item-title">
+        <a href="https://www.musha-gyoretsu.jp/index.html" target="_blank" class="events-inner-item-title">
           松江武者行列
         </a>
         <div class="events-inner-item-text">
@@ -56,14 +56,14 @@
       <div class="events-inner-item">
         <div class="events-inner-item-day">
           ９月中旬～<br>
-          １０月中旬
+          １０月中旬（予定）
         </div>
-        <a href="/" target="_blank" class="events-inner-item-title">
+        <a href="https://www.suitouro.jp/" target="_blank" class="events-inner-item-title">
           松江水燈路
         </a>
         <div class="events-inner-item-text">
           秋の松江を照らす光のイベント！<br>
-          手作りな行灯と温かな光で松江城を包み込みます。
+          手作りの行燈や温かな光で松江城を包み込みます。
         </div>
       </div>
     </div>
@@ -134,8 +134,10 @@ export default {
       .events-inner-item-title {
         width: 28%;
         font-size: 18px;
+        text-decoration: underline;
+        transition: color 0.1s;
         &:hover {
-          text-decoration: underline;
+          color: #E68224;
         }
       }
       .events-inner-item-text {
