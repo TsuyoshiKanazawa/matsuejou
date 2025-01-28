@@ -9,7 +9,7 @@
           <p class="guide-content-text">
             「天下一やさしいお城ガイド」を合言葉に武者が松江城を攻めと守りの目線から案内します。ただ見るだけでは分からない松江城の魅力を分かりやすく解説！
           </p>
-          <a href="https://matsue-musya.com/344" target="_blank" class="guide-content-link">
+          <a href="https://www.kankou-matsue.jp/machiaruki/course/desc/?id=9" target="_blank" class="guide-content-link">
             <p>詳細はこちら</p>
           </a>
         </div>
@@ -20,7 +20,7 @@
           <p class="guide-content-text left">
             四〇〇年の時を越え、現世に蘇った武者たち。松江から日の本を元気にするため、県外のPRステージや城中に出陣し、武者のまち「松江」を紹介！土曜日、日曜日に松江城に行けば、会えるかも…！
           </p>
-          <a href="https://matsue-musya.com/category/profile" target="_blank" class="guide-content-link left">
+          <a href="https://ameblo.jp/matsue-wakamusya-tai/" target="_blank" class="guide-content-link left">
             <p>詳細はこちら</p>
           </a>
         </div>

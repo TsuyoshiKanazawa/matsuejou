@@ -34,7 +34,7 @@
           ６月２８日（土）<br>
           ６月２９日（日）
         </div>
-        <a href="/" target="_blank" class="events-inner-item-title">
+        <a href="https://www.kankou-matsue.jp/event_calendar/desc/?event=110912" target="_blank" class="events-inner-item-title">
           特別版お城EXPO <br>in 松江
         </a>
         <div class="events-inner-item-text">
