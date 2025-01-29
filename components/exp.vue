@@ -38,7 +38,7 @@
 
           <span>シークレットステージ</span>
           ２０２５年２月２５日～２０２６年３月３１日の期間中、<br>
-          松江城内に設置されている二次元バーコードを読み取ると、<br>
+          松江城内に設置されている二次元コードを読み取ると、<br>
           シークレットステージ「隠ステージ」が出現！<br>
           全ステージクリアして、松江城を攻略しよう！
         </p>
@@ -132,7 +132,16 @@ export default {
       },
     }
   },
-
+  mounted() {
+    const expEnv = this.$el.querySelector('.exp-env');
+    expEnv.addEventListener('wheel', (event) => {
+      event.preventDefault(); // デフォルトのスクロールを防ぐ
+      expEnv.scrollBy({
+        top: event.deltaY * 0.3, // スクロール量を調整（0.3倍にする）
+        behavior: 'smooth' // スムーズスクロール
+      });
+    });
+  }
 }
 
 </script>
@@ -294,6 +303,7 @@ section {
     font-size: 10px;
     overflow-y: scroll;
     color: #fff;
+    scroll-behavior: smooth;
   }
   .feature {
     padding: 4%;
