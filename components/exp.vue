@@ -4,8 +4,8 @@
       <h2 class="title fade-enter-from" v-observe="'inview'">松江城攻略室とは？</h2>
       <div class="exp-inner fade-enter-from" v-observe="'inview'">
         <p class="exp-inner__title">オリジナルブラウザゲーム</p>
-        <p class="exp-inner__copy">松江城攻略室 ~鉄壁の城を攻略せよ!! ~</p>
-        <p class="exp-inner__text">島根県松江市にある国宝松江城天守が、<br>２０２５年７月８日に「国宝指定１０周年」を迎えることを記念し登場！</p>
+        <p class="exp-inner__copy">松江城攻略室<br class="sp-only"> ~鉄壁の城を攻略せよ!! ~</p>
+        <p class="exp-inner__text">島根県松江市にある国宝松江城天守が、<br>２０２５年７月８日に「国宝指定１０周年」を<br class="sp-only">迎えることを記念し登場！</p>
       </div>
       <div class="iphone-img fade-enter-from" v-observe="'inview'">
         <img src="/img/exp/iphone.png" alt="iphone" class="iphone-img__bg">
@@ -156,6 +156,9 @@ section {
     right: -8%;
     z-index: 10;
     height: 100%;
+    @include mixins.max-screen(800px) {
+      right: 0%;
+    }
   }
   .NinjaClimb2 {
     position: absolute;
@@ -170,6 +173,9 @@ section {
     right: -8%;
     z-index: 10;
     height: 200%;
+    @include mixins.max-screen(800px) {
+      right: 0%;
+    }
   }
   .NinjaClimb4 {
     position: absolute;
@@ -183,6 +189,12 @@ section {
 .exp {
   padding-top: 4%;
   contain: paint;
+  position: relative;
+  z-index: 15;
+  @include mixins.max-screen(800px) {
+    padding-top: 10%;
+  }
+
   .title {
     background-image: url('/img/subtract.png');
     background-size: 100% 100%;
@@ -195,21 +207,40 @@ section {
     font-size: 28px;
     line-height: 64px;
     margin: 0 auto;
+    @include mixins.max-screen(800px) {
+      width: 70vw;
+      height: 15vw;
+      font-size: 6vw;
+      line-height: 15vw;
+      background-image: url('/img/subtract-sp.png');
+    }
   }
+
   .exp-inner {
     margin: 2% 0 2%;
     text-align: center;
     font-size: 16px;
+    @include mixins.max-screen(800px) {
+      font-size: 4vw;
+      margin: 8% 0 2%;
+    }
     .exp-inner__title {
       margin-top: 3%;
     }
     .exp-inner__copy {
       font-size: 30px;
       margin-top: 1%;
+      @include mixins.max-screen(800px) {
+        font-size: 6vw;
+        margin-top: 5%;
+      }
     }
     .exp-inner__text {
       margin-top: 1%;
       line-height: 1.8;
+      @include mixins.max-screen(800px) {
+        font-size: 4vw;
+      }
     }
   }
   .iphone-img {
@@ -217,22 +248,40 @@ section {
     height: 321px;
     margin: 0 auto;
     position: relative;
+    @include mixins.max-screen(800px) {
+      width: 90vw;
+      height: 50vw;
+    }
+
     .iphone-img__bg {
       position: absolute;
       top: 0;
       left: 0;
       width: 639px;
+      @include mixins.max-screen(800px) {
+        width: 90vw;
+      }
     }
     .iphone-img__in {
       position: absolute;
       top: 7.1%;
       left: 3.5%;
       width: 595px;
+      @include mixins.max-screen(800px) {
+        width: 86vw;
+        top: 3vw;
+      }
     }
   }
   .slider {
     margin-top: 2%;
     margin-left: -7%;
+    @include mixins.max-screen(800px) {
+      .slider__img {
+        width: 75vw;
+        margin-left: -82%;
+      }
+    }
   }
   .exp-text {
     background-image: url('/img/exp/expBG.jpg');

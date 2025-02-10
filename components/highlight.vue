@@ -51,7 +51,7 @@
             <div class="highlight-content-name">包板の柱</div>
             <div class="highlight-content-text">
               <img src="/img/highlight/tsutsumiitaIcon.png" class="highlight-content-icon" alt="tsutsumiitaIcon" style="top: -100%;">
-              柱を板状の部材で囲み、金輪やかすがいで固定した松江城特有の柱じゃ！
+              柱を板状の部材で囲み、鉄輪やかすがいで固定した松江城特有の柱じゃ！
             </div>
           </div>
           <div class="highlight-content">

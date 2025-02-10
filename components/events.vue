@@ -26,7 +26,7 @@
           松江武者行列
         </a>
         <div class="events-inner-item-text">
-          堀尾衆一行が ４００ 年の刻をこえて松江城に入城する様子を再現した絢爛豪華な時代絵巻！
+          堀尾衆一行が ４００ 年の時を越えて松江城に入城する様子を再現した絢爛豪華な時代絵巻！
         </div>
       </div>
       <div class="events-inner-item">

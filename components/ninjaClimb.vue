@@ -87,3 +87,13 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.ninja-climb {
+  z-index: 10;
+  @include mixins.max-screen(800px) {
+    width: 10vw;
+  }
+}
+</style>
+

@@ -5,7 +5,7 @@
       <div class="contents">
         <div class="border">
           <Exp id="about" loading="lazy" />
-          <div class="float">
+          <div class="float" style="display: none;">
             <div class="float-button__wrapper">
               <img src="/img/musha.png" alt="play" class="musha">
               <a class="float-button" href="#about">
@@ -107,6 +107,7 @@ export default {
       .float-button__wrapper {
         position: sticky;
         top: 80%;
+
         z-index: 100;
         .float-button {
           display: block;
@@ -146,6 +147,16 @@ export default {
     background-repeat: repeat-y;
     border-left: 3px solid #002D18;
     border-right: 3px solid #002D18;
+    @include mixins.max-screen(800px) {
+      width: 100vw;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-left: none;
+      border-right: none;
+    }
+
+
   }
 }
 </style>

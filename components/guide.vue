@@ -18,7 +18,7 @@
         <div class="guide-content-text">
           <h3 class="guide-content-title left">まつえ若武者隊</h3>
           <p class="guide-content-text left">
-            四〇〇年の時を越え、現世に蘇った武者たち。松江から日の本を元気にするため、県外のPRステージや城中に出陣し、武者のまち「松江」を紹介！土曜日、日曜日に松江城に行けば、会えるかも…！
+            ４００年の時を越え、現世に蘇った武者たち。松江から日の本を元気にするため、県外のPRステージや城中に出陣し、武者のまち「松江」を紹介！土曜日、日曜日に松江城に行けば、会えるかも…！
           </p>
           <a href="https://ameblo.jp/matsue-wakamusya-tai/" target="_blank" class="guide-content-link left">
             <p>詳細はこちら</p>
