@@ -1,5 +1,5 @@
 <template>
-  <header class="pc-only">
+  <header class="header-pc" v-if="windowSize.width > 800">
     <a href="#about" class="text-hover" >松江城攻略室とは？</a>
     /
     <a href="#castle" class="text-hover">松江城の特徴</a>
@@ -12,7 +12,7 @@
     /
     <a href="#scoreboard" class="text-hover">スコアボード</a>
   </header>
-  <header class="sp-only">
+  <header class="header-sp" v-if="windowSize.width < 800">
     <div class="humberger" @click="toggleMenu" :class="{ 'active': isMenuOpen }"></div>
     <div class="menu-wrapper" :class="{ 'active': isMenuOpen }">
       <div class="menu-item">
@@ -36,9 +36,28 @@ export default {
     }
   },
   setup() {
-    return {
-      
+    const getWindowSize = () => {
+      return {
+        width: window.innerWidth,
+        height: window.innerHeight
+      };
+    };
 
+    const windowSize = ref(getWindowSize());
+    const updateWindowSize = () => {
+      windowSize.value = getWindowSize();
+    };
+
+    onMounted(() => {
+      window.addEventListener('resize', updateWindowSize);
+    });
+
+    // コンポーネントが破棄される際にリスナーを解除
+    onBeforeUnmount(() => {
+      window.removeEventListener('resize', updateWindowSize);
+    });
+    return {
+      windowSize
     }
   },
   methods: {
@@ -51,7 +70,7 @@ export default {
 
 
 <style lang="scss" scoped>
-.pc-only {
+.header-pc {
   display: flex;
   justify-content: center;
   gap: 1.5%;
@@ -69,10 +88,10 @@ export default {
   z-index: 100;
   line-height: 51px;
   a {
-    font-size: 14px;
+    font-size: min(1.3vw, 14px);
   }
 }
-.sp-only {
+.header-sp {
   position: fixed;
   top: 0;
   right: 0;
