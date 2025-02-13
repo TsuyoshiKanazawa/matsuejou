@@ -1,6 +1,6 @@
 <template>
   <header class="pc-only">
-    <a href="#about" class="text-hover">松江城攻略室とは？</a>
+    <a href="#about" class="text-hover" >松江城攻略室とは？</a>
     /
     <a href="#castle" class="text-hover">松江城の特徴</a>
     /
@@ -16,12 +16,12 @@
     <div class="humberger" @click="toggleMenu" :class="{ 'active': isMenuOpen }"></div>
     <div class="menu-wrapper" :class="{ 'active': isMenuOpen }">
       <div class="menu-item">
-        <a href="#about" class="text-hover">松江城攻略室とは？</a>
-        <a href="#castle" class="text-hover">松江城の特徴</a>
-        <a href="#matsue-musha" class="text-hover">時代案内人・若武者隊</a>
-        <a href="#events" class="text-hover">関連イベント</a>
-        <a href="#explore" class="text-hover">周辺スポット</a>
-        <a href="#scoreboard" class="text-hover">スコアボード</a>
+        <a href="#about" class="text-hover" @click="toggleMenu">松江城攻略室とは？</a>
+        <a href="#castle" class="text-hover" @click="toggleMenu">松江城の特徴</a>
+        <a href="#matsue-musha" class="text-hover" @click="toggleMenu">時代案内人・若武者隊</a>
+        <a href="#events" class="text-hover" @click="toggleMenu">関連イベント</a>
+        <a href="#explore" class="text-hover" @click="toggleMenu">周辺スポット</a>
+        <a href="#scoreboard" class="text-hover" @click="toggleMenu">スコアボード</a>
       </div>
     </div>
   </header>
@@ -126,12 +126,15 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     opacity: 0;
     visibility: hidden;
     background-color: #fff;
     z-index: 99;
     transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &.active {
       opacity: 1;
       visibility: visible;
@@ -141,19 +144,14 @@ export default {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      gap: 10px;
-      margin-top: 30%;
+      gap: 6vh;
+      margin-top: -20%;
       a {
-        font-size: 14px;
+        font-size: min(5vw,30px);
       }
 
     }
   }
 }
-
-
-
-
-
 </style>
 

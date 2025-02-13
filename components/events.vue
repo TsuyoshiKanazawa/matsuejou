@@ -5,10 +5,10 @@
       <p>（２０２５年）</p>
     </div>
     <div class="events-inner">
-      <p style="font-size: 14px; text-align: center; margin-bottom: 20px;">松江城天守国宝指定１０周年を迎える２０２５年には、様々なイベントが企画されているぞ！</p>
+      <p class="events-inner-text">松江城天守国宝指定１０周年を<br class="sp-only">迎える２０２５年には、<br class="sp-only">様々なイベントが企画されているぞ！</p>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          ３月２６日（水）～<br>
+          ３月２６日（水）～<br class="pc-only">
           ４月９日（水）
         </div>
         <a href="https://www.kankou-matsue.jp/event_calendar/desc/?event=110629" target="_blank" class="events-inner-item-title">
@@ -31,11 +31,11 @@
       </div>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          ６月２８日（土）<br>
+          ６月２８日（土）<br class="pc-only">
           ６月２９日（日）
         </div>
         <a href="https://www.kankou-matsue.jp/event_calendar/desc/?event=110912" target="_blank" class="events-inner-item-title">
-          特別版お城EXPO <br>in 松江
+          特別版お城EXPO <br class="pc-only">in 松江
         </a>
         <div class="events-inner-item-text">
           ２０２５年特別開催！城郭研究者による講演や全国の自治体出展ブースなど、老若男女が楽しめるお城の祭典を松江にて！
@@ -43,10 +43,10 @@
       </div>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          ７月下旬～<br>８月下旬（予定）
+          ７月下旬～<br class="pc-only">８月下旬（予定）
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
-          国宝五城<br>
+          国宝五城<br class="pc-only">
           天守合同床磨き
         </a>
         <div class="events-inner-item-text">
@@ -55,7 +55,7 @@
       </div>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          ９月中旬～<br>
+          ９月中旬～<br class="pc-only">
           １０月中旬（予定）
         </div>
         <a href="https://www.suitouro.jp/" target="_blank" class="events-inner-item-title">
@@ -93,6 +93,13 @@ export default {
   height: 691px;
   margin: 7% auto 0%;
   position: relative;
+  @include mixins.max-screen(800px) {
+    background-image: url('/img/events/eventsBG-sp.jpg');
+    width: 90vw;
+    height: 270vw;
+    padding: 4% 5%;
+    margin: 20% auto 0%;
+  }
   .events-title {
     background-image: url('/img/subtract.png');
     background-size: 100% 100%;
@@ -107,15 +114,40 @@ export default {
     margin: 0 auto;
     transform: translateY(-50%);
     color: #fff;
+    @include mixins.max-screen(800px) {
+      background-image: url('/img/subtract-sp.png');
+      width: 70vw;
+      height: 15vw;
+      font-size: 5vw;
+      line-height: 15vw;
+      margin-top: -3.5vw;
+    }
     h2 {
       font-size: 28px;
+      @include mixins.max-screen(800px) {
+        font-size: 5vw;
+      }
     }
     p {
       font-size: 18px;
       margin-top: 8px;
+      @include mixins.max-screen(800px) {
+        font-size: 3vw;
+      }
     }
   }
   .events-inner {
+    .events-inner-text {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+      @include mixins.max-screen(800px) {
+        font-size: 3.5vw;
+        line-height: 1.9;
+        margin-bottom: 5vw;
+        margin-top: -4vw;
+      }
+    }
     .events-inner-item {
       font-size: 14px;
       display: flex;
@@ -125,23 +157,47 @@ export default {
       border-top: 1px solid #000;
       height: 90px;
       line-height: 1.5;
+      @include mixins.max-screen(800px) {
+        display: block;
+        height: auto;
+        padding: 3vw 0;
+      }
       &:last-child {
         border-bottom: 1px solid #000;
       }
       .events-inner-item-day {
         width: 27%;
+        @include mixins.max-screen(800px) {
+          width: 100%;
+          text-align: center;
+          font-size: 3.5vw;
+        }
       }
       .events-inner-item-title {
         width: 28%;
         font-size: 18px;
         text-decoration: underline;
         transition: color 0.1s;
-        &:hover {
-          color: #E68224;
+        @include mixins.max-screen(800px) {
+          margin: 0 auto;
+          display: block;
+          text-align: center;
+          width: auto;
+          font-size: 5vw;
+          margin: 2vw 0;
+        }
+        @include mixins.min-screen(801px) {
+          &:hover {
+            color: #E68224;
+          }
         }
       }
       .events-inner-item-text {
         width: 65%;
+        @include mixins.max-screen(800px) {
+          width: 100%;
+          font-size: 3.7vw;
+        }
       }
     }
   }
@@ -159,16 +215,22 @@ export default {
     border: 2px solid #000;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
     transition: color 0.3s, background-color 0.1s, transform 0.1s;
-    &:hover {
-      background-color: #fff;
-      color: #E68224;
-      transform: translateY(-5px);
+    @include mixins.max-screen(800px) {
+      width: 100%;
+      height: 11vw;
+      line-height: 11vw;
+      font-size: 4vw;
+      margin: 8vw auto 0;
     }
   }
   .ninja {
     position: absolute;
     bottom: 1.8%;
     right: 0;
+    @include mixins.max-screen(800px) {
+      width: 25vw;
+      bottom: -2.5%;
+    }
   }
 }
 </style>

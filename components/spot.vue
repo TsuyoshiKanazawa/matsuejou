@@ -65,6 +65,13 @@ export default {
   height: 757px;
   margin: 7% auto 0%;
   position: relative;
+  @include mixins.max-screen(800px) {
+    background-image: url('/img/spot/spotBG-sp.jpg');
+    width: 90vw;
+    height: 267vw;
+    padding: 4% 5%;
+    margin: 20% auto 0%;
+  }
   .spot-title {
     background-image: url('/img/subtract.png');
     background-size: 100% 100%;
@@ -79,21 +86,46 @@ export default {
     margin: 0 auto;
     transform: translateY(-50%);
     color: #fff;
+    @include mixins.max-screen(800px) {
+      background-image: url('/img/subtract-sp.png');
+      width: 70vw;
+      height: 15vw;
+      font-size: 5vw;
+      line-height: 15vw;
+      margin-top: -3.5vw;
+    }
     h2 {
       font-size: 28px;
+      @include mixins.max-screen(800px) {
+        font-size: 5.5vw;
+      }
     }
   }
   .spot-inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: center;
+    line-height: 1.8;
+    @include mixins.max-screen(800px) {
+      justify-content: center;
+    }
     .spot-inner-content {
       margin: 5px 0 50px;
       border: 2px solid #002D18;
       position: relative;
+      @include mixins.max-screen(800px) {
+        margin: 0 0 10%;
+      }
       img {
         display: block;
         width: 340px;
+        @include mixins.max-screen(800px) {
+          width: 81vw;
+          height: 45vw;
+          object-fit: cover;
+          object-position: 50% 100%;
+        }
       }
       .spot-inner-content-title {
         position: absolute;
@@ -137,6 +169,11 @@ export default {
     position: absolute;
     bottom: 1.8%;
     left: 3%;
+    @include mixins.max-screen(800px) {
+      width: 13vw;
+      bottom: 2.3vw;
+      left: 4.7vw;
+    }
   }
 }
 </style>

@@ -148,6 +148,11 @@
   line-height: 2;
   margin: 0 auto;
   position: relative;
+  @include mixins.max-screen(800px) {
+    background-image: url('/img/feature/featureBG-sp.jpg');
+    width: 90vw;
+    height: 1090vw;
+  }
   .feature-title {
     background-image: url('/img/subtract.png');
     background-size: 100% 100%;
@@ -161,6 +166,14 @@
     line-height: 64px;
     margin: 0 auto;
     margin-top: -80px;
+    @include mixins.max-screen(800px) {
+      background-image: url('/img/subtract-sp.png');
+      width: 70vw;
+      height: 15vw;
+      font-size: 5vw;
+      line-height: 15vw;
+      margin-top: -11.5vw;
+    }
   }
   .builder {
     background-image: url('/img/feature/featureSubtract.png');
@@ -173,6 +186,13 @@
     font-size: 18px;
     line-height: 45px;
     margin: 30px 0 0 50px;
+    @include mixins.max-screen(800px) {
+      margin: 3vw 0 0 3vw;
+      width: 35vw;
+      height: 9vw;
+      font-size: 4vw;
+      line-height: 10vw;
+    }
   }
   .feature-content {
     width: 636px;
@@ -185,10 +205,24 @@
     padding: 13px;
     display: flex;
     position: relative;
+    @include mixins.max-screen(800px) {
+      background-image: url('/img/feature/featureFlame-sp.jpg');
+      width: 98%;
+      margin-top: 3vw;
+      display: block;
+      overflow: hidden;
+      padding: 5vw 3.5vw;
+    }
     .content-image {
       width: 285px;
       height: 285px;
       border: 2px solid #002D18;
+      @include mixins.max-screen(800px) {
+        width: 100%;
+        height: 63vw;
+        object-fit:cover;
+        object-position: left 0 bottom 0;
+      }
     }
     .content-title {
       font-size: 20px;
@@ -203,18 +237,43 @@
         background-color: #E6B424;
         color: #000;
       }
+      @include mixins.max-screen(800px) {
+        margin-left: -2.2vw;
+        width: 35vw;
+        height: 10vw;
+        font-size: 4.5vw;
+        line-height: 9.5vw;
+        padding-left: 0;
+        text-align: center;
+        small {
+          font-size: 2.5vw !important;
+        }
+      }
     }
     .content-copy {
       font-size: 20px;
       margin-top: 1%;
       width: 270px;
       padding-left: 20px;
+      @include mixins.max-screen(800px) {
+        padding-left: 0;
+        font-size: 4.3vw;
+        line-height: 1.3;
+        margin-top: 5%;
+      }
     }
     .content-explain {
       font-size: 14px;
       width: 310px;
       padding-left: 20px;
       line-height: 1.7;
+      @include mixins.max-screen(800px) {
+        width: 100%;
+        padding-left: 0;
+        font-size: 3.3vw;
+        line-height: 1.7;
+        margin-top: 3%;
+      }
     }
     .content-overview {
       margin: 10px 0;
@@ -222,6 +281,13 @@
       width: 284px;
       padding-left: 20px;
       line-height: 1.7;
+      @include mixins.max-screen(800px) {
+        margin: 5% 0 3%;
+        padding-left: 0;
+        font-size: 3.2vw;
+        line-height: 1.7;
+        width: 100%;
+      }
       .content-overview-title {
         font-size: 12px;
         color: #002D18;
@@ -229,6 +295,10 @@
         width: 84px;
         text-align: center;
         margin-bottom: 5px;
+        @include mixins.max-screen(800px) {
+          width: 23vw;
+          font-size: 3.2vw;
+        }
       }
       .content-overview-text {
         line-height: 1.7;
@@ -240,28 +310,63 @@
       position: absolute;
       top: -3%;
       right: -2%;
+      @include mixins.max-screen(800px) {
+        width: 33vw;
+        top: 45%;
+        right: 4%;
+      }
       &.yoshiharu {
         width: 159px;
+        @include mixins.max-screen(800px) {
+          width: 33vw;
+          top: 45%;
+          right: 4%;
+        }
       }
       &.ohori {
         width: 173px;
+        @include mixins.max-screen(800px) {
+          width: 41vw;
+          top: 40%;
+          right: -2%;
+        }
       }
       &.ishigaki {
         width: 115px;
         right: 2%;
+        @include mixins.max-screen(800px) {
+          width: 34vw;
+          top: 40%;
+          right: 0;
+        }
       }
       &.ootemon {
         width: 143px;
+        @include mixins.max-screen(800px) {
+          width: 41vw;
+          top: 40%;
+          right: -2%;
+        }
       }
       &.tsukeyagura {
         width: 118px;
         top: 0%;
         right:-3%;
+        @include mixins.max-screen(800px) {
+          width: 34vw;
+          top: 43%;
+          right: -3%;
+        }
       }
       &.tensyu {
         width: 103px;
         top: 0%;
         right: 0%;
+        @include mixins.max-screen(800px) {
+          width: 26vw;
+          top: 41.5%;
+          right: 0%;
+        }
       }
     }
   }
@@ -270,6 +375,9 @@
     position: absolute;
     bottom: 50px;
     left: 4.5%;
+    @include mixins.max-screen(800px) {
+      display: none;
+    }
   }
 }
 </style>

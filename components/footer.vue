@@ -53,7 +53,6 @@
 footer {
   background-color: #383838;
   width: 100%;
-  display: none;
   .footer-wrapper {
     max-width: 1120px;
     height: 300px;
@@ -61,26 +60,51 @@ footer {
     margin: 0 auto;
     position: relative;
     padding: 2% 5%;
+    @include mixins.max-screen(800px) {
+      width: 100vw;
+      height: auto;
+      padding: 5% 8%;
+    }
     .footerPic {
       position: absolute;
       top: -41%;
       left: 3%;
       width: 102px;
+      @include mixins.max-screen(800px) {
+        top: -17%;
+        width: 20vw;
+      }
     }
+
     .footer-contents-wrapper {
       display: flex;
       justify-content: flex-start;
       gap: 5%;
+      @include mixins.max-screen(800px) {
+        display: block;
+        width: fit-content;
+      }
       .footer-logo {
         color: #fff;
         text-align: center;
+        @include mixins.max-screen(800px) {
+          text-align: left;
+        }
         .footer-logo-img {
           width: 158px;
+          @include mixins.max-screen(800px) {
+            width: 40vw;
+          }
         }
         p {
           font-size: 14px;
           line-height: 2;
           margin-top: 5%;
+          @include mixins.max-screen(800px) {
+            text-align: center;
+            width: 40vw;
+            font-size: 4vw;
+          }
         }
       }
       .footer-contents {
@@ -92,6 +116,9 @@ footer {
           .footer-contents-banner-img {
             width: 221px;
             margin-bottom: 7%;
+            @include mixins.max-screen(800px) {
+              width: 62vw;
+            }
           }
         }
       }
@@ -103,10 +130,20 @@ footer {
         height: 136px;
         margin-top: 85px;
         margin-left: -2%;
+        @include mixins.max-screen(800px) {
+          margin-top: 2%;
+          margin-left: 0;
+          margin: 2% 0 35%;
+          width: 100%;
+          height: 35vw;
+        }
         p {
           color: #fff;
           font-size: 14px;
           height: fit-content;
+          @include mixins.max-screen(800px) {
+            font-size: 4vw;
+          }
         }
         a {
           display: block;
@@ -114,13 +151,23 @@ footer {
           font-size: 12px;
           height: fit-content;
           width: 130px;
+          @include mixins.max-screen(800px) {
+            font-size: 3.4vw;
+            margin-right: 10%;
+            width: 30vw;
+          }
         }
       }
+
     }
     .footer-copyright {
       position: absolute;
       bottom: 0;
       right: 2%;
+      @include mixins.max-screen(800px) {
+        right: 0;
+        bottom: 1%;
+      }
       .footer-copyright-img {
         width: 100px;
         display: block;
@@ -130,6 +177,10 @@ footer {
         color: #fff;
         font-size: 14px;
         line-height: 2;
+        @include mixins.max-screen(800px) {
+          font-size: 3vw;
+        }
+
       }
     }
   }

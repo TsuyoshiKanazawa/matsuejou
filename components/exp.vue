@@ -29,17 +29,17 @@
       </div>
       <div class="exp-text fade-enter-from" v-observe="'inview'">
         <p class="exp-text__content">
-          松江城が誇る「鉄壁の守備」を全５ステージ＋シークレットステージで体験できる<br>
+          松江城が誇る「鉄壁の守備」を<br class="sp-only">全５ステージ＋シークレットステージで体験できる<br>
           高難易度オリジナルブラウザゲーム。<br>
 
           <span>攻略モード・無限モード</span>
-          「攻略モード」で本丸攻略を目指し、腕に自信のある方は「無限モード」をプレイして<br>
+          「攻略モード」で本丸攻略を目指し、<br class="sp-only">腕に自信のある方は「無限モード」をプレイして<br>
           ランキングトップを狙ってみよう！<br>
 
           <span>シークレットステージ</span>
-          ２０２５年２月２５日～２０２６年３月３１日の期間中、<br>
-          松江城内に設置されている二次元コードを読み取ると、<br>
-          シークレットステージ「隠ステージ」が出現！<br>
+          ２０２５年２月２５日～２０２６年３月３１日の<br class="sp-only">期間中、<br class="pc-only">
+          松江城内に設置されている二次元コードを<br class="sp-only">読み取ると、<br class="pc-only">
+          シークレットステージ<br class="sp-only">「隠ステージ」が出現！<br>
           全ステージクリアして、松江城を攻略しよう！
         </p>
         <img src="/img/player5.png" alt="icon" class="exp-text__icon">
@@ -74,27 +74,34 @@
       </div>
       <div class="feature fade-enter-from" v-observe="'inview'">
         <p>
-          松江城は江戸時代に全国１７０箇所もあったと言われるお城のなかで、<br>
-          現在は１２城しか残っていない江戸時代またはそれ以前に建造された「現存天守」のひとつ。<br>
-          松江城天守は２０１５年７月８日に国宝に指定され、２０２５年に国宝指定から１０周年を迎えます。
+          松江城は江戸時代に全国１７０箇所も<br class="sp-only">あったと言われるお城のなかで、<br>
+          現在は１２城しか残っていない江戸時代または<br class="sp-only">それ以前に建造された「現存天守」のひとつ。<br>
+          松江城天守は２０１５年７月８日に国宝に指定され、<br class="sp-only">２０２５年に国宝指定から１０周年を迎えます。
         </p>
         <div class="feature-logo">
           <img src="/img/exp/matsuejouLogo.jpg" alt="feature">
-          <p class="feature-logo__text">松江城天守<br>
-            国宝１０周年記念<br>
+          <p class="feature-logo__text">松江城天守<br class="pc-only">
+            国宝１０周年記念<br class="pc-only">
             ロゴマーク
           </p>
         </div>
-        <p>
-          戦乱の時代で一切の攻城を受けずに現代に残った松江城は、<br>
-          秀吉・家康に仕えたとされる「堀尾吉晴」の城攻め経験を基に、<br>
-          籠城戦すらも考慮される実戦を想定した築城がされています。
+        <p class="feature-text ft">
+          戦乱の時代で一切の攻城を受けずに<br class="sp-only">現代に残った松江城は、<br>
+          秀吉・家康に仕えたとされる「堀尾吉晴」の<br class="sp-only">城攻め経験を基に、<br>
+          籠城戦すらも考慮される実戦を想定した<br class="sp-only">築城がされています。
         </p>
-        <p style="margin-top: 2%;">
-          松江城攻略室は、まさに「鉄壁の城」と呼ぶにふさわしい松江城を、<br>
-          戦乱の世には果たされなかった「攻略」の視点で描くオリジナルブラウザゲームです。
+        <p class="feature-text sc" style="margin-top: 2%;">
+          松江城攻略室は、<br class="sp-only">まさに「鉄壁の城」と呼ぶにふさわしい松江城を、<br>
+
+          戦乱の世には果たされなかった「攻略」の視点で描く<br class="sp-only">オリジナルブラウザゲームです。
         </p>
-        <img src="/img/exp/matsuejouImage.jpg" alt="feature" class="feature-image">
+        <img src="/img/exp/matsuejouImage.jpg" alt="feature" class="feature-image pc-only">
+        <img src="/img/exp/matsuejouImage-sp.jpg" alt="feature" class="feature-image sp-only">
+        <p class="sp-only">
+          本サイトは松江城のことに詳しい<br>
+          我々「まつえ時代案内人」と<br>
+          「まつえ若武者隊」がご案内するぞ！
+        </p>
       </div>
     </div>
     <NinjaClimb class="NinjaClimb1" />
@@ -157,6 +164,7 @@ section {
     z-index: 10;
     height: 100%;
     @include mixins.max-screen(800px) {
+      top: 10vw;
       right: 0%;
     }
   }
@@ -166,6 +174,10 @@ section {
     left: -8%;
     z-index: 10;
     height: 150%;
+    @include mixins.max-screen(800px) {
+      top: 250vw;
+      left: 0%;
+    }
   }
   .NinjaClimb3 {
     position: absolute;
@@ -174,6 +186,8 @@ section {
     z-index: 10;
     height: 200%;
     @include mixins.max-screen(800px) {
+      height: 350%;
+      top: 500vw;
       right: 0%;
     }
   }
@@ -183,6 +197,11 @@ section {
     left: -8%;
     z-index: 10;
     height: 250%;
+    @include mixins.max-screen(800px) {
+      height: 350%;
+      top: 750vw;
+      left: 0%;
+    }
   }
 }
 
@@ -190,7 +209,6 @@ section {
   padding-top: 4%;
   contain: paint;
   position: relative;
-  z-index: 15;
   @include mixins.max-screen(800px) {
     padding-top: 10%;
   }
@@ -210,7 +228,7 @@ section {
     @include mixins.max-screen(800px) {
       width: 70vw;
       height: 15vw;
-      font-size: 6vw;
+      font-size: 5vw;
       line-height: 15vw;
       background-image: url('/img/subtract-sp.png');
     }
@@ -240,6 +258,7 @@ section {
       line-height: 1.8;
       @include mixins.max-screen(800px) {
         font-size: 4vw;
+        margin-top: 4%;
       }
     }
   }
@@ -268,7 +287,7 @@ section {
       left: 3.5%;
       width: 595px;
       @include mixins.max-screen(800px) {
-        width: 86vw;
+        width: 85vw;
         top: 3vw;
       }
     }
@@ -296,6 +315,14 @@ section {
     padding-top: 4%;
     font-size: 14px;
     position: relative;
+    @include mixins.max-screen(800px) {
+      background-image: url('/img/exp/expBG-sp.jpg');
+      width: 90vw;
+      height: 125vw;
+      margin: 8% auto 0;
+      font-size: 2.8vw;
+      padding-top: 8%;
+    }
     .exp-text__content {
       span {
         background-color: #006837;
@@ -307,19 +334,33 @@ section {
         width: 232px;
         height: 38px;
         line-height: 19px;
+        @include mixins.max-screen(800px) {
+          width: 58vw;
+          height: 10vw;
+          line-height: 8vw;
+          font-size: 3.5vw;
+          margin: 5% auto 3%;
+        }
       }
     }
+
     .exp-text__icon {
       position: absolute;
       bottom: 8px;
       left: 4%;
       width: 110px;
+      @include mixins.max-screen(800px) {
+        width: 20vw;
+      }
     }
   }
   .exp-btn {
     margin: 5% 0;
     display: flex;
     justify-content: center;
+    @include mixins.max-screen(800px) {
+      margin: 15% 0 10%;
+    }
     .exp-btn__link {
       background-color: #EC0000;
       padding: 10px 20px;
@@ -336,10 +377,15 @@ section {
       border: 2px solid #000;
       box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
       transition: color 0.3s, background-color 0.1s, transform 0.1s;
-      &:hover {
-        background-color: #fff;
-        color: #EC0000;
-        transform: translateY(-5px);
+      @include mixins.max-screen(800px) {
+        width: 83vw;
+      }
+      @include mixins.min-screen(801px) {
+        &:hover {
+          background-color: #fff;
+          color: #EC0000;
+          transform: translateY(-5px);
+        }
       }
     }
   }
@@ -353,6 +399,13 @@ section {
     overflow-y: scroll;
     color: #fff;
     scroll-behavior: smooth;
+    @include mixins.max-screen(800px) {
+      width: 83vw;
+      height: 20vw;
+      font-size: 2.8vw;
+      padding: 5% 5%;
+    }
+
   }
   .feature {
     padding: 4%;
@@ -366,11 +419,34 @@ section {
     text-align: center;
     line-height: 1.9;
     margin: 2% auto;
+    @include mixins.max-screen(800px) {
+      background-image: url('/img/exp/matsuejouBG-sp.jpg');
+      width: 90vw;
+      height: 220vw;
+      font-size: 3vw;
+      padding: 5% 5%;
+      margin: 12% auto;
+    }
+
+    .feature-text {
+      @include mixins.max-screen(800px) {
+        margin-top: 13%;
+        &.sc {
+          margin-top: 5% !important;
+        }
+      }
+    }
+
+
     .feature-logo {
       margin: 3% auto 2%;
+
       position: relative;
       img {
         width: 402px;
+        @include mixins.max-screen(800px) {
+          width: 80%;
+        }
       }
       .feature-logo__text {
         position: absolute;
@@ -378,11 +454,23 @@ section {
         right: 40px;
         font-size: 12px;
         text-align: left;
+        @include mixins.max-screen(800px) {
+          text-align: center;
+          font-size: 2.6vw;
+          bottom: -15%;
+          right: 0;
+          transform: translateX(-22%);
+        }
       }
     }
+
+
     .feature-image {
       width: 640px;
       margin: 1.8% auto;
+      @include mixins.max-screen(800px) {
+        width: 95%;
+      }
     }
   }
 }

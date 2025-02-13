@@ -5,7 +5,7 @@
       <div class="contents">
         <div class="border">
           <Exp id="about" loading="lazy" />
-          <div class="float" style="display: none;">
+          <div class="float">
             <div class="float-button__wrapper">
               <img src="/img/musha.png" alt="play" class="musha">
               <a class="float-button" href="#about">
@@ -19,6 +19,7 @@
             <Events id="events" loading="lazy" />
             <Spot id="explore" loading="lazy" />
             <Ranking id="scoreboard" loading="lazy" />
+            <div class="spacer sp-only" />
           </div>
         </div>
       </div>
@@ -107,8 +108,7 @@ export default {
       .float-button__wrapper {
         position: sticky;
         top: 80%;
-
-        z-index: 100;
+        z-index: 99;
         .float-button {
           display: block;
           margin-right: 1%;
@@ -139,7 +139,6 @@ export default {
           z-index: -10;
         }
       }
-
     }
     width: 1120px;
     background-image: url('/img/contentsBG.jpg');
@@ -149,14 +148,13 @@ export default {
     border-right: 3px solid #002D18;
     @include mixins.max-screen(800px) {
       width: 100vw;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      background-image: url('/img/contentsBG-sp.jpg');
       border-left: none;
       border-right: none;
     }
-
-
+  }
+  .spacer {
+    height: 30vw;
   }
 }
 </style>
