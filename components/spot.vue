@@ -4,7 +4,7 @@
       <h2>周辺スポット</h2>
     </div>
     <div class="spot-inner">
-      <p style="font-size: 14px;  margin: 0 auto 20px;">松江城のお堀沿いにも見どころが沢山！城とあわせて巡ると、より楽しいぞ！</p>
+      <p style="font-size: 14px;  margin: 0 auto 20px;">松江城のお堀沿いにも見どころが沢山！<br class="sp-only">城とあわせて巡ると、より楽しいぞ！</p>
       <div class="spot-inner-content">
         <img src="/img/spot/rekishikan.jpg" alt="spot">
         <div class="spot-inner-content-title">
@@ -109,6 +109,11 @@ export default {
     line-height: 1.8;
     @include mixins.max-screen(800px) {
       justify-content: center;
+      margin-top: -3vw;
+      p {
+        font-size: 3.6vw !important;
+        margin: 0 auto 4vw !important;
+      }
     }
     .spot-inner-content {
       margin: 5px 0 50px;
@@ -139,6 +144,12 @@ export default {
         width: 130px;
         height: 40px;
         line-height: 40px;
+        @include mixins.max-screen(800px) {
+          font-size: 3.8vw;
+          width: 30vw;
+          height: 9vw;
+          line-height: 9vw;
+        }
       }
       .spot-btn {
         position: absolute;
@@ -156,10 +167,18 @@ export default {
         border: 2px solid #000;
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
         transition: color 0.3s, background-color 0.1s, transform 0.1s;
-        &:hover {
-          background-color: #fff;
-          color: #E68224;
-          transform: translateY(40%);
+        @include mixins.max-screen(800px) {
+          font-size: 3.8vw;
+          width: 37vw;
+          height: 10vw;
+          line-height: 10vw;
+        }
+        @include mixins.min-screen(801px) {
+          &:hover {
+            background-color: #fff;
+            color: #E68224;
+            transform: translateY(40%);
+          }
         }
       }
     }

@@ -63,7 +63,7 @@ footer {
     @include mixins.max-screen(800px) {
       width: 100vw;
       height: auto;
-      padding: 5% 8%;
+      padding: 5% 5%;
     }
     .footerPic {
       position: absolute;
@@ -71,7 +71,7 @@ footer {
       left: 3%;
       width: 102px;
       @include mixins.max-screen(800px) {
-        top: -17%;
+        top: -33%;
         width: 20vw;
       }
     }
@@ -81,8 +81,8 @@ footer {
       justify-content: flex-start;
       gap: 5%;
       @include mixins.max-screen(800px) {
-        display: block;
         width: fit-content;
+        position: relative;
       }
       .footer-logo {
         color: #fff;
@@ -93,7 +93,8 @@ footer {
         .footer-logo-img {
           width: 158px;
           @include mixins.max-screen(800px) {
-            width: 40vw;
+            width: 28vw;
+            margin-top: 10%;
           }
         }
         p {
@@ -102,12 +103,15 @@ footer {
           margin-top: 5%;
           @include mixins.max-screen(800px) {
             text-align: center;
-            width: 40vw;
-            font-size: 4vw;
+            width: 28vw;
+            font-size: 2.8vw;
           }
         }
       }
       .footer-contents {
+        @include mixins.max-screen(800px) {
+          margin-bottom: 40vw;
+        }
         .footer-contents-banner {
           margin-top: 3%;
           a {
@@ -117,7 +121,7 @@ footer {
             width: 221px;
             margin-bottom: 7%;
             @include mixins.max-screen(800px) {
-              width: 62vw;
+              width: 57vw;
             }
           }
         }
@@ -133,16 +137,18 @@ footer {
         @include mixins.max-screen(800px) {
           margin-top: 2%;
           margin-left: 0;
-          margin: 2% 0 35%;
-          width: 100%;
+          width: 72%;
           height: 35vw;
+          position: absolute;
+          right: -10%;
+          bottom: 5%;
         }
         p {
           color: #fff;
           font-size: 14px;
           height: fit-content;
           @include mixins.max-screen(800px) {
-            font-size: 4vw;
+            font-size: 3vw;
           }
         }
         a {
@@ -152,9 +158,9 @@ footer {
           height: fit-content;
           width: 130px;
           @include mixins.max-screen(800px) {
-            font-size: 3.4vw;
-            margin-right: 10%;
-            width: 30vw;
+            font-size: 2.7vw;
+            margin-right: 6%;
+            width: 26vw;
           }
         }
       }
@@ -172,6 +178,12 @@ footer {
         width: 100px;
         display: block;
         margin: 0 0 0 auto;
+        @include mixins.max-screen(800px) {
+          width: 30vw;
+          position: absolute;
+          left: -50%;
+          bottom: 0;
+        }
       }
       p {
         color: #fff;

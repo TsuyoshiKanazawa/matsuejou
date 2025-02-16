@@ -1,60 +1,65 @@
 <template>
   <section class="ranking fade-enter-from" v-observe="'inview'" style="scroll-margin-top: 120px;">
-    <div class="ranking-title">
-      <div>松江城攻略室<br>鉄壁の城を攻略せよ!!</div>
-      <h2>スコアボード</h2>
-    </div>
-    <div class="ranking-text">
-      各ステージの「無限モード」における<br class="sp-only">優秀なプレイヤーとスコアを発表するぞ!!<br>
-      ※スコアボードは毎時００分に更新されます。
-    </div>
-    <div class="ranking-inner">
-      <div class="stageSelector">
-        <div class="stageSelector__item" @click="stage = 'stage:1'" :class="{ active: stage === 'stage:1' }">
-          <p class="stageSelector__item__stage">其ノ一</p><p class="stageSelector__item__stageName"> 水堀</p>
-        </div>
-        <div class="stageSelector__item" @click="stage = 'stage:2'" :class="{ active: stage === 'stage:2' }">
-          <p class="stageSelector__item__stage">其ノ二</p><p class="stageSelector__item__stageName"> 石垣</p>
-        </div>
-        <div class="stageSelector__item" @click="stage = 'stage:3'" :class="{ active: stage === 'stage:3' }">
-          <p class="stageSelector__item__stage">其ノ三</p><p class="stageSelector__item__stageName"> 大手門</p>
-        </div>
-        <div class="stageSelector__item" @click="stage = 'stage:4'" :class="{ active: stage === 'stage:4' }">
-          <p class="stageSelector__item__stage">其ノ四</p><p class="stageSelector__item__stageName"> 附櫓</p>
-        </div>
-        <div class="stageSelector__item" @click="stage = 'stage:5'" :class="{ active: stage === 'stage:5' }">
-          <p class="stageSelector__item__stage">其ノ五</p><p class="stageSelector__item__stageName"> 天守</p>
-        </div>
+    <div class="ranking-wrapper" :class="{ open: open }">
+      <div class="ranking-title">
+        <div>松江城攻略室<br>鉄壁の城を攻略せよ!!</div>
+        <h2>スコアボード</h2>
       </div>
+      <div class="ranking-text">
+        各ステージの「無限モード」における<br class="sp-only">優秀なプレイヤーとスコアを発表するぞ!!<br>
+        ※スコアボードは毎時００分に更新されます。
+      </div>
+      <div class="ranking-inner" :class="{ open: open }">
+        <div class="stageSelector">
+          <div class="stageSelector__item" @click="stage = 'stage:1'" :class="{ active: stage === 'stage:1' }">
+            <p class="stageSelector__item__stage">其ノ一</p><p class="stageSelector__item__stageName"> 水堀</p>
+          </div>
+          <div class="stageSelector__item" @click="stage = 'stage:2'" :class="{ active: stage === 'stage:2' }">
+            <p class="stageSelector__item__stage">其ノ二</p><p class="stageSelector__item__stageName"> 石垣</p>
+          </div>
+          <div class="stageSelector__item" @click="stage = 'stage:3'" :class="{ active: stage === 'stage:3' }">
+            <p class="stageSelector__item__stage">其ノ三</p><p class="stageSelector__item__stageName"> 大手門</p>
+          </div>
+          <div class="stageSelector__item" @click="stage = 'stage:4'" :class="{ active: stage === 'stage:4' }">
+            <p class="stageSelector__item__stage">其ノ四</p><p class="stageSelector__item__stageName"> 附櫓</p>
+          </div>
+          <div class="stageSelector__item" @click="stage = 'stage:5'" :class="{ active: stage === 'stage:5' }">
+            <p class="stageSelector__item__stage">其ノ五</p><p class="stageSelector__item__stageName"> 天守</p>
+          </div>
+        </div>
 
-      <div class="rankingBoardTitle">
-        <div class="rankingTitle rank">順位</div>
-        <div class="rankingTitle score">スコア</div>
-        <div class="rankingTitle nickname">プレイヤー</div>
-      </div>
-      <div v-if="windowSize.width > 800" v-for="ranking in rankings[stage]" :key="ranking.rank" class="rankingBoard">
-        <div class="rankingScore rank">{{ ranking.rank }}位</div>
-        <div class="rankingScore score">{{ comma(ranking.score) }}</div>
-        <div class="rankingScore nickname">
-          <img v-if="ranking.icon !== 9" :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.png`" alt="icon">
-          <img v-else :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.jpg`" alt="icon">
-          {{ ranking.nickname }}
+        <div class="rankingBoardTitle">
+          <div class="rankingTitle rank">順位</div>
+          <div class="rankingTitle score">スコア</div>
+          <div class="rankingTitle nickname">プレイヤー</div>
         </div>
-      </div>
-      <div v-if="windowSize.width < 800" v-for="ranking in rankings[stage]" :key="ranking.rank" class="rankingBoard-sp">
-        <div class="rankingScore rank">
-          <div class="rankingScore__label">順位</div>
-          <div class="rankingScore__value">{{ ranking.rank }}位</div>
+        <div v-if="windowSize.width > 800" v-for="ranking in rankings[stage]" :key="ranking.rank" class="rankingBoard">
+          <div class="rankingScore rank">{{ ranking.rank }}位</div>
+          <div class="rankingScore score">{{ comma(ranking.score) }}</div>
+          <div class="rankingScore nickname">
+            <img v-if="ranking.icon !== 9" :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.png`" alt="icon">
+            <img v-else :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.jpg`" alt="icon">
+            {{ ranking.nickname }}
+          </div>
         </div>
-        <div class="rankingScore score">
-          <div class="rankingScore__label">スコア</div>
-          <div class="rankingScore__value">{{ comma(ranking.score) }}</div>
+        <div v-if="windowSize.width < 800" v-for="ranking in (open ? rankings[stage] : rankings[stage]?.slice(0, 5))" :key="ranking.rank" class="rankingBoard-sp">
+          <div class="rankingScore rank">
+            <div class="rankingScore__label">順位</div>
+            <div class="rankingScore__value">{{ ranking.rank }}位</div>
+          </div>
+          <div class="rankingScore score">
+            <div class="rankingScore__label">スコア</div>
+            <div class="rankingScore__value">{{ comma(ranking.score) }}</div>
+          </div>
+          <div class="rankingScore nickname">
+            <img v-if="ranking.icon !== 9" :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.png`" alt="icon">
+            <img v-else :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.jpg`" alt="icon">
+            <div class="rankingScore__value">{{ ranking.nickname }}</div>
+          </div>
         </div>
-        <div class="rankingScore nickname">
-          <img v-if="ranking.icon !== 9" :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.png`" alt="icon">
-          <img v-else :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.jpg`" alt="icon">
-          <div class="rankingScore__value">{{ ranking.nickname }}</div>
-        </div>
+        <button class="rankingBoard-sp__button" v-if="windowSize.width < 800" @click="open = !open">
+          {{ open ? '▲閉じる' : '▼10位まで表示' }}
+        </button>
       </div>
     </div>
   </section>
@@ -104,7 +109,7 @@ export default {
     onBeforeUnmount(() => {
       window.removeEventListener('resize', updateWindowSize);
     });
-    console.log(windowSize.value.width);
+    //console.log(windowSize.value.width);
 
     return {
       rankings,
@@ -115,6 +120,7 @@ export default {
   data() {
     return {
       stage: 'stage:1',
+      open: false,
     }
   }
 }
@@ -122,18 +128,25 @@ export default {
 
 <style lang="scss" scoped>
 .ranking {
-  background-image: url('/img/rankingBackground.png');
-  background-size: 100% 100%;
-  background-position: center;
-  width: 800px;
-  height: 702px;
   margin: 7% auto 0%;
-  @include mixins.max-screen(800px) {
-    background-image: url('/img/rankingBackground-sp.jpg');
-    width: 90vw;
-    height: 345vw;
-    padding: 2% 5%;
-    margin: 20% auto 0%;
+  
+  .ranking-wrapper {
+    background-image: url('/img/rankingBackground.png');
+    background-size: 100% 100%;
+    background-position: center;
+    width: 800px;
+    height: 702px;
+    margin: 0 auto;
+    @include mixins.max-screen(800px) {
+      background-image: url('/img/rankingBackground2-sp.jpg');
+      width: 90vw;
+      height: auto;
+      padding: 2% 5% 10%;
+      margin: 20% auto 0%;
+      &.open {
+        background-image: url('/img/rankingBackground-sp.jpg');
+      }
+    }
   }
   .ranking-title {
     background-image: url('/img/subtract.png');
@@ -150,6 +163,12 @@ export default {
     transform: translateY(-50%);
     color: #fff;
     line-height: 1.5;
+    h2 {
+      font-size: 28px;
+      @include mixins.max-screen(800px) {
+        font-size: 5.5vw;
+      }
+    }
     @include mixins.max-screen(800px) {
       background-image: url('/img/subtract-sp.png');
       width: 70vw;
@@ -158,12 +177,6 @@ export default {
       line-height: 1.5;
       margin-top: -2.5vw;
     }
-    h2 {
-      font-size: 28px;
-      @include mixins.max-screen(800px) {
-        font-size: 5.5vw;
-      }
-    }
   }
   .ranking-text {
     font-size: 14px;
@@ -171,8 +184,9 @@ export default {
     margin: -2% auto 2%;
     line-height: 2;
     @include mixins.max-screen(800px) {
-      font-size: 3vw;
+      font-size: 3.1vw;
       line-height: 2;
+      margin: -4% auto 2%;
     }
   }
   .ranking-inner {
@@ -184,8 +198,12 @@ export default {
     margin: 0 auto;
     @include mixins.max-screen(800px) {
       width: 100%;
-      height: 304vw;
-      background-image: url('/img/rankingBoardBG-sp.jpg');
+      height: auto;
+      background-image: url('/img/rankingBoardBG2-sp.jpg');
+      padding-bottom: 1.3vw;
+      &.open {
+        background-image: url('/img/rankingBoardBG-sp.jpg');
+      }
     }
     .stageSelector {
       display: flex;
@@ -196,7 +214,7 @@ export default {
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
-        padding: 7vw 6vw;
+        padding: 7vw 6vw 6vw;
       }
       .stageSelector__item {
         padding: 10px;
@@ -307,9 +325,6 @@ export default {
       }
     }
     .rankingBoard-sp {
-      @include mixins.min-screen(801px) {
-        display: none;
-      }
       width: 96%;
       margin: 0 auto;
       display: flex;
@@ -318,29 +333,28 @@ export default {
       padding: 3% 5%;
       .rankingScore {
         width: 50%;
-        height: 10vw;
-        font-size: 3vw;
+        height: 7vw;
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
         &.rank {
-          width: 45%;
+          width: 40%;
           display: flex;
           justify-content: flex-start;
           gap: 1vw;
           .rankingScore__label {
             background-color: #006837;
             color: #fff;
-            width: 17vw;
-            height: 8vw;
+            width: 12vw;
+            height: 6vw;
             text-align: center;
-            line-height: 8vw;
-            font-size: 4.4vw;
+            line-height: 6vw;
+            font-size: 3.5vw;
             margin-right: 4%;
           }
           .rankingScore__value {
             font-size: 4.4vw;
-            line-height: 8vw;
+            line-height: 6vw;
           }
         }
         &.score {
@@ -351,16 +365,16 @@ export default {
           .rankingScore__label {
             background-color: #006837;
             color: #fff;
-            width: 17vw;
-            height: 8vw;
+            width: 14vw;
+            height: 6vw;
             text-align: center;
-            line-height: 8vw;
-            font-size: 4.4vw;
+            line-height: 6vw;
+            font-size: 3.5vw;
             margin-right: 4%;
           }
           .rankingScore__value {
             font-size: 4.4vw;
-            line-height: 8vw;
+            line-height: 6vw;
             text-align: center;
           }
         }
@@ -384,6 +398,23 @@ export default {
       &:nth-child(even) {
         background-color: #FFFECC;
       }
+      @include mixins.min-screen(801px) {
+        display: none;
+      }
+    }
+    .rankingBoard-sp__button {
+      width: 40vw;
+      height: 10vw;
+      font-size: 4vw;
+      background-color: #E68224;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin: 2vw auto 5vw;
+      display: block;
+      border-radius: 80px;
+      border: 2px solid #000;
+      box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
     }
   }
 }

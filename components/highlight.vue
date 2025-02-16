@@ -3,64 +3,64 @@
     <div class="highlight fade-enter-from" v-observe="'inview'">
       <h2 class="highlight-title">武者のおすすめ６選</h2>
       <div class="highlight-inner">
-        <div class="highlight-name">
+        <h3 class="highlight-name">
           天守外
-        </div>
+        </h3>
         <div class="highlight-content-wrapper">
           <div class="highlight-content">
             <img src="/img/highlight/umadamari.jpg" class="highlight-content-img" alt="umadamari">
-            <div class="highlight-content-name">馬溜<small>（枡形虎口）</small></div>
-            <div class="highlight-content-text">
+            <h4 class="highlight-content-name">馬溜<small>（枡形虎口）</small></h4>
+            <p class="highlight-content-text">
               <img src="/img/highlight/umadamariIcon.png" class="highlight-content-icon umadamari" alt="umadamariIcon">
               敵を殲滅するために四方を囲まれた空間。その先に待ち構えるは大手門！
-            </div>
+            </p>
           </div>
           <div class="highlight-content">
             <img src="/img/highlight/ishigaki.jpg" class="highlight-content-img" alt="ishigaki">
-            <div class="highlight-content-name">石垣の刻印</div>
-            <div class="highlight-content-text">
+            <h4 class="highlight-content-name">石垣の刻印</h4>
+            <p class="highlight-content-text">
               <img src="/img/highlight/ishigakiIcon.png" class="highlight-content-icon ishigaki" alt="ishigakiIcon">
               石垣には殿（堀尾氏）の家紋である「分銅紋」をはじめとした様々な紋様があるぞ！
-            </div>
+            </p>
           </div>
           <div class="highlight-content" style="margin-bottom: 0%;">
             <img src="/img/highlight/tensyu.jpg" class="highlight-content-img" alt="tensyu">
-            <div class="highlight-content-name">天守の鯱</div>
-            <div class="highlight-content-text">
+            <h4 class="highlight-content-name">天守の鯱</h4>
+            <p class="highlight-content-text">
               <img src="/img/highlight/tensyuIcon.png" class="highlight-content-icon tensyu" alt="tensyuIcon">
               現存１２天守の中で最大の大きさを誇る鯱（しゃちほこ）。
-            </div>
+            </p>
           </div>
         </div>
       </div>
       <div class="highlight-inner" style="margin-top: 0%;">
-        <div class="highlight-name">
+        <h3 class="highlight-name">
           天守内
-        </div>
+        </h3>
         <div class="highlight-content-wrapper">
           <div class="highlight-content">
             <img src="/img/highlight/tooshihashira.jpg" class="highlight-content-img" alt="tooshihashira">
-            <div class="highlight-content-name">通し柱</div>
-            <div class="highlight-content-text">
+            <h4 class="highlight-content-name">通し柱</h4>
+            <p class="highlight-content-text">
               <img src="/img/highlight/tooshihashiraIcon.png" class="highlight-content-icon tooshihashira" alt="tooshihashiraIcon">
               １階と２階を貫くように配置され、荷重を分散させる構造となっておるぞ。当時最新の築城技術じゃ！
-            </div>
+            </p>
           </div>
           <div class="highlight-content">
             <img src="/img/highlight/tsutsumiita.jpg" class="highlight-content-img" alt="tsutsumiita">
-            <div class="highlight-content-name">包板の柱</div>
-            <div class="highlight-content-text">
+            <h4 class="highlight-content-name">包板の柱</h4>
+            <p class="highlight-content-text">
               <img src="/img/highlight/tsutsumiitaIcon.png" class="highlight-content-icon tsutsumiita" alt="tsutsumiitaIcon">
               柱を板状の部材で囲み、鉄輪やかすがいで固定した松江城特有の柱じゃ！
-            </div>
+            </p>
           </div>
           <div class="highlight-content">
             <img src="/img/highlight/kitourei.jpg" class="highlight-content-img" alt="kitourei">
-            <div class="highlight-content-name">祈祷札</div>
-            <div class="highlight-content-text">
+            <h4 class="highlight-content-name">祈祷札</h4>
+            <p class="highlight-content-text">
               <img src="/img/highlight/kitoureiIcon.png" class="highlight-content-icon kitourei" alt="kitoureiIcon">
-              天守内では松江城天守を国宝へと押し上げた貴重な史料「祈祷札（きとうふだ）」のれぷりかが見れるぞ！
-            </div>
+              天守内では松江城天守を国宝へと押し上げた貴重な史料「祈祷札（きとうふだ）」のれぷりかが見られるぞ！
+            </p>
           </div>
         </div>
       </div>
@@ -121,10 +121,10 @@ section {
       line-height: 36px;
       margin: 0 auto;
       @include mixins.max-screen(800px) {
-        width: 30vw;
-        height: 11vw;
-        font-size: 6vw;
-        line-height: 11vw;
+        width: 24.5vw;
+        height: 9vw;
+        font-size: 5.3vw;
+        line-height: 9vw;
       }
     }
     .highlight-content-wrapper {
@@ -134,9 +134,6 @@ section {
       justify-content: center;
       gap: 5%;
       margin: 3% 0 0 0;
-      @include mixins.max-screen(800px) {
-        margin: 3% 0 5% 0;
-      }
       .highlight-content {
         position: relative;
         margin: 0 0 2% 0;
@@ -195,6 +192,9 @@ section {
           img {
             position: absolute;
             right: 80%;
+            @include mixins.max-screen(800px) {
+              left: 73%;
+            }
             &.umadamari {
               top: -140%;
               @include mixins.max-screen(800px) {
@@ -206,7 +206,7 @@ section {
               top: -60%;
               @include mixins.max-screen(800px) {
                 top: -50%;
-                right: 78%;
+                left: 78%;
                 width: 18vw;
               }
             }
@@ -246,9 +246,12 @@ section {
           @include mixins.max-screen(800px) {
             width: 100%;
             font-size: 3.6vw;
-            padding: 2% 0 0 20vw;
+            padding: 2% 19vw 0 1vw;
           }
         }
+      }
+      @include mixins.max-screen(800px) {
+        margin: 3% 0 5% 0;
       }
     }
 
@@ -260,7 +263,7 @@ section {
     width: 220px;
     @include mixins.max-screen(800px) {
       width: 40vw;
-      bottom: 0;
+      bottom: 0.5%;
       left: 65%;
       transform: scale(-1, 1);
     }

@@ -101,6 +101,12 @@ export default {
   justify-content: center;
   .contents {
     position: relative;
+    width: 1120px;
+    background-image: url('/img/contentsBG.jpg');
+    background-size: contain;
+    background-repeat: repeat-y;
+    border-left: 3px solid #002D18;
+    border-right: 3px solid #002D18;
     .border {
       border-left: 3px solid #006837;
       border-right: 3px solid #006837;
@@ -109,6 +115,9 @@ export default {
         position: sticky;
         top: 80%;
         z-index: 99;
+        @include mixins.max-screen(800px) {
+          top: 88%;
+        }
         .float-button {
           display: block;
           margin-right: 1%;
@@ -140,12 +149,6 @@ export default {
         }
       }
     }
-    width: 1120px;
-    background-image: url('/img/contentsBG.jpg');
-    background-size: contain;
-    background-repeat: repeat-y;
-    border-left: 3px solid #002D18;
-    border-right: 3px solid #002D18;
     @include mixins.max-screen(800px) {
       width: 100vw;
       background-image: url('/img/contentsBG-sp.jpg');

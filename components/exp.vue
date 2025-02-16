@@ -80,10 +80,7 @@
         </p>
         <div class="feature-logo">
           <img src="/img/exp/matsuejouLogo.jpg" alt="feature">
-          <p class="feature-logo__text">松江城天守<br class="pc-only">
-            国宝１０周年記念<br class="pc-only">
-            ロゴマーク
-          </p>
+          <p class="feature-logo__text">松江城天守<br class="pc-only">国宝１０周年記念<br class="pc-only">ロゴマーク</p>
         </div>
         <p class="feature-text ft">
           戦乱の時代で一切の攻城を受けずに<br class="sp-only">現代に残った松江城は、<br>
@@ -97,7 +94,7 @@
         </p>
         <img src="/img/exp/matsuejouImage.jpg" alt="feature" class="feature-image pc-only">
         <img src="/img/exp/matsuejouImage-sp.jpg" alt="feature" class="feature-image sp-only">
-        <p class="sp-only">
+        <p class="sp-only" style="color: #006837;">
           本サイトは松江城のことに詳しい<br>
           我々「まつえ時代案内人」と<br>
           「まつえ若武者隊」がご案内するぞ！
@@ -212,7 +209,6 @@ section {
   @include mixins.max-screen(800px) {
     padding-top: 10%;
   }
-
   .title {
     background-image: url('/img/subtract.png');
     background-size: 100% 100%;
@@ -233,7 +229,6 @@ section {
       background-image: url('/img/subtract-sp.png');
     }
   }
-
   .exp-inner {
     margin: 2% 0 2%;
     text-align: center;
@@ -271,7 +266,6 @@ section {
       width: 90vw;
       height: 50vw;
     }
-
     .iphone-img__bg {
       position: absolute;
       top: 0;
@@ -318,9 +312,9 @@ section {
     @include mixins.max-screen(800px) {
       background-image: url('/img/exp/expBG-sp.jpg');
       width: 90vw;
-      height: 125vw;
+      height: 132vw;
       margin: 8% auto 0;
-      font-size: 2.8vw;
+      font-size: 3.1vw;
       padding-top: 8%;
     }
     .exp-text__content {
@@ -337,13 +331,12 @@ section {
         @include mixins.max-screen(800px) {
           width: 58vw;
           height: 10vw;
-          line-height: 8vw;
+          line-height: 7vw;
           font-size: 3.5vw;
           margin: 5% auto 3%;
         }
       }
     }
-
     .exp-text__icon {
       position: absolute;
       bottom: 8px;
@@ -405,7 +398,6 @@ section {
       font-size: 2.8vw;
       padding: 5% 5%;
     }
-
   }
   .feature {
     padding: 4%;
@@ -422,12 +414,11 @@ section {
     @include mixins.max-screen(800px) {
       background-image: url('/img/exp/matsuejouBG-sp.jpg');
       width: 90vw;
-      height: 220vw;
-      font-size: 3vw;
-      padding: 5% 5%;
+      height: 225vw;
+      font-size: 3.1vw;
+      padding: 5% 4%;
       margin: 12% auto;
     }
-
     .feature-text {
       @include mixins.max-screen(800px) {
         margin-top: 13%;
@@ -436,8 +427,6 @@ section {
         }
       }
     }
-
-
     .feature-logo {
       margin: 3% auto 2%;
 
@@ -460,6 +449,12 @@ section {
           bottom: -15%;
           right: 0;
           transform: translateX(-22%);
+          background-color: #fff;
+          width: 80%;
+          margin: 0 auto;
+          display: block;
+          right: 50%;
+          transform: translateX(50%);
         }
       }
     }

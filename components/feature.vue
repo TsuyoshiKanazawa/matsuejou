@@ -27,7 +27,7 @@
             城を囲む水の防壁
           </div>
           <p class="content-explain">
-            築城時からほぼ同じ形を残す城全体を囲む広大な水路で、外敵の侵入を阻む強力な防壁の役割を担った。豊かな水量が保たれたこの堀は、戦略的にも巧みに設計され、今では周囲の自然景観と調和する美しい水辺となっている。
+            築城時からほぼ同じ形を残す城全体を囲む広大な水路で、外敵の侵入を阻む強力な防壁の役割を担った。<br class="sp-only">豊かな水量が保たれたこの堀は、戦略的にも巧みに設計され、今では周囲の自然景観と調和する美しい水辺となっている。
           </p>
           <div class="content-overview">
             <h3 class="content-overview-title">ゲーム概要</h3>
@@ -47,7 +47,7 @@
             堅牢な石の要塞
           </div>
           <p class="content-explain">
-            隙間なく積み上げられた堅牢な構造で、敵の侵入を阻む防御の要を担った。地形を巧みに利用した石垣は、緩やかな傾斜でありながら圧倒的な威圧感を放ち、見る者に松江城の力強さを感じさせる。
+            隙間なく積み上げられた堅牢な構造で、敵の侵入を阻む防御の要を担った。<br class="sp-only">地形を巧みに利用した石垣は、緩やかな傾斜でありながら圧倒的な威圧感を放ち、見る者に松江城の力強さを感じさせる。
           </p>
           <div class="content-overview">
             <h3 class="content-overview-title">ゲーム概要</h3>
@@ -67,7 +67,7 @@
             威厳と防御の象徴
           </div>
           <p class="content-explain">
-            大手門は、城への唯一の正式な入口として重要な役割を担った。明治時代の廃城令によって取り壊され、現存していない。今回は松江城絵図などから再現。大手門を抜けることで、壮大な松江城の構えを肌で感じられる。
+            大手門は、城への唯一の正式な入口として重要な役割を担った。明治時代の廃城令によって取り壊され、現存していない。<br class="sp-only">今回は松江城絵図などから再現。大手門を抜けることで、壮大な松江城の構えを肌で感じられる。
           </p>
           <div class="content-overview">
             <h3 class="content-overview-title">ゲーム概要</h3>
@@ -82,12 +82,12 @@
       <div class="feature-content">
         <img src="/img/feature/tsukeyagura.jpg" alt="feature" class="content-image">
         <div class="content-text">
-          <h1 class="content-title">附櫓<small style="font-size: 14px;">（つけやぐら）</small></h1>
+          <h1 class="content-title">附櫓</h1>
           <div class="content-copy">
             天守を守る最終防衛機能
           </div>
           <p class="content-explain">
-            附櫓（つけやぐら）は、天守の入口に配置された重要な防衛施設。堅牢で機能的な附櫓は、天守の守りを一層強化し、城を守る最後の砦として機能する。
+            附櫓（つけやぐら）は、天守の入口に配置された重要な防衛施設。<br class="sp-only">堅牢で機能的な附櫓は、天守の守りを一層強化し、城を守る最後の砦として機能する。
           </p>
           <div class="content-overview">
             <h3 class="content-overview-title">ゲーム概要</h3>
@@ -151,7 +151,8 @@
   @include mixins.max-screen(800px) {
     background-image: url('/img/feature/featureBG-sp.jpg');
     width: 90vw;
-    height: 1090vw;
+    height: auto;
+    padding-bottom: 10%;
   }
   .feature-title {
     background-image: url('/img/subtract.png');
@@ -258,6 +259,7 @@
       @include mixins.max-screen(800px) {
         padding-left: 0;
         font-size: 4.3vw;
+        width: 100%;
         line-height: 1.3;
         margin-top: 5%;
       }
@@ -270,7 +272,7 @@
       @include mixins.max-screen(800px) {
         width: 100%;
         padding-left: 0;
-        font-size: 3.3vw;
+        font-size: 3.1vw;
         line-height: 1.7;
         margin-top: 3%;
       }
@@ -284,7 +286,7 @@
       @include mixins.max-screen(800px) {
         margin: 5% 0 3%;
         padding-left: 0;
-        font-size: 3.2vw;
+        font-size: 3.1vw;
         line-height: 1.7;
         width: 100%;
       }
@@ -303,6 +305,9 @@
       .content-overview-text {
         line-height: 1.7;
         width: 284px;
+        @include mixins.max-screen(800px) {
+          width: 100%;
+        }
       }
     }
     .content-icon {
@@ -336,7 +341,7 @@
         right: 2%;
         @include mixins.max-screen(800px) {
           width: 34vw;
-          top: 40%;
+          top: 37%;
           right: 0;
         }
       }
@@ -344,7 +349,7 @@
         width: 143px;
         @include mixins.max-screen(800px) {
           width: 41vw;
-          top: 40%;
+          top: 37%;
           right: -2%;
         }
       }
@@ -354,7 +359,7 @@
         right:-3%;
         @include mixins.max-screen(800px) {
           width: 34vw;
-          top: 43%;
+          top: 39%;
           right: -3%;
         }
       }

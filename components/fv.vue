@@ -22,7 +22,7 @@
   position: relative;
   @include mixins.max-screen(800px) {
     width: 100vw;
-    height: 75vh;
+    height: 500px;
     background-image: url('/img/bg-sp.jpg');
   }
   .site-logo {

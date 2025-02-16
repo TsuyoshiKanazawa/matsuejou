@@ -43,7 +43,8 @@
       </div>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          ７月下旬～<br class="pc-only">８月下旬（予定）
+          ７月下旬 ～<br class="pc-only">
+          ８月下旬（予定）
         </div>
         <a href="/" target="_blank" class="events-inner-item-title">
           国宝五城<br class="pc-only">
@@ -55,7 +56,7 @@
       </div>
       <div class="events-inner-item">
         <div class="events-inner-item-day">
-          ９月中旬～<br class="pc-only">
+          ９月中旬 ～<br class="pc-only">
           １０月中旬（予定）
         </div>
         <a href="https://www.suitouro.jp/" target="_blank" class="events-inner-item-title">
@@ -161,9 +162,13 @@ export default {
         display: block;
         height: auto;
         padding: 3vw 0;
+        border-top: 1px solid #006837;
       }
       &:last-child {
         border-bottom: 1px solid #000;
+        @include mixins.max-screen(800px) {
+          border-bottom: 1px solid #006837;
+        }
       }
       .events-inner-item-day {
         width: 27%;
@@ -185,6 +190,7 @@ export default {
           width: auto;
           font-size: 5vw;
           margin: 2vw 0;
+          color: #7C0664;
         }
         @include mixins.min-screen(801px) {
           &:hover {
