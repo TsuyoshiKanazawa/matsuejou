@@ -272,7 +272,7 @@
       @include mixins.max-screen(800px) {
         width: 100%;
         padding-left: 0;
-        font-size: 3.1vw;
+        font-size: 3.3vw;
         line-height: 1.7;
         margin-top: 3%;
       }
@@ -286,7 +286,7 @@
       @include mixins.max-screen(800px) {
         margin: 5% 0 3%;
         padding-left: 0;
-        font-size: 3.1vw;
+        font-size: 3.3vw;
         line-height: 1.7;
         width: 100%;
       }

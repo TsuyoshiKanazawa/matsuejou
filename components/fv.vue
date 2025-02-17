@@ -10,7 +10,6 @@
 <style lang="scss" scoped>
 .fv {
   background-image: url('/img/bg.jpg');
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +20,7 @@
   align-items: center;
   position: relative;
   @include mixins.max-screen(800px) {
-    width: 100vw;
+    width: 100%;
     height: 500px;
     background-image: url('/img/bg-sp.jpg');
   }

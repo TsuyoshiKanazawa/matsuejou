@@ -28,12 +28,20 @@
 </template>
 
 <script>
+import { onMounted } from 'vue';
+
 export default {
+  setup() {
+    onMounted(() => {
+      document.body.style.overflowX = "hidden";
+    });
+  },
   data() {
     return {
     }
   },
   mounted() {
+    console.log(document.body.scrollWidth > document.documentElement.clientWidth);
     if (window.location.hash === '#castle') {
       // DOMの描画が完了した後に、対象要素へスクロールさせる
       this.$nextTick(() => {

@@ -53,6 +53,7 @@
 footer {
   background-color: #383838;
   width: 100%;
+  overflow-x: hidden;
   .footer-wrapper {
     max-width: 1120px;
     height: 300px;

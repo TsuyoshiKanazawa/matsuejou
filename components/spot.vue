@@ -68,7 +68,7 @@ export default {
   @include mixins.max-screen(800px) {
     background-image: url('/img/spot/spotBG-sp.jpg');
     width: 90vw;
-    height: 267vw;
+    height: 253vw;
     padding: 4% 5%;
     margin: 20% auto 0%;
   }
@@ -111,7 +111,7 @@ export default {
       justify-content: center;
       margin-top: -3vw;
       p {
-        font-size: 3.6vw !important;
+        font-size: 3.3vw !important;
         margin: 0 auto 4vw !important;
       }
     }
@@ -190,7 +190,7 @@ export default {
     left: 3%;
     @include mixins.max-screen(800px) {
       width: 13vw;
-      bottom: 2.3vw;
+      bottom: -3vw;
       left: 4.7vw;
     }
   }

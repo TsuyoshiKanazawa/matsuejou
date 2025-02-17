@@ -37,10 +37,7 @@
           ランキングトップを狙ってみよう！<br>
 
           <span>シークレットステージ</span>
-          ２０２５年２月２５日～２０２６年３月３１日の<br class="sp-only">期間中、<br class="pc-only">
-          松江城内に設置されている二次元コードを<br class="sp-only">読み取ると、<br class="pc-only">
-          シークレットステージ<br class="sp-only">「隠ステージ」が出現！<br>
-          全ステージクリアして、松江城を攻略しよう！
+          ２０２５年２月２５日～２０２６年３月３１日の<br class="sp-only">期間中、<br class="pc-only">松江城内に設置されている<br class="sp-only">二次元コードを読み取ると、<br>シークレットステージ「隠ステージ」が出現！<br>全ステージクリアして、松江城を攻略しよう！
         </p>
         <img src="/img/player5.png" alt="icon" class="exp-text__icon">
       </div>
@@ -75,22 +72,18 @@
       <div class="feature fade-enter-from" v-observe="'inview'">
         <p>
           松江城は江戸時代に全国１７０箇所も<br class="sp-only">あったと言われるお城のなかで、<br>
-          現在は１２城しか残っていない江戸時代または<br class="sp-only">それ以前に建造された「現存天守」のひとつ。<br>
-          松江城天守は２０１５年７月８日に国宝に指定され、<br class="sp-only">２０２５年に国宝指定から１０周年を迎えます。
+          現在は１２城しか残っていない江戸時代またはそれ以前に建造された「現存天守」のひとつ。<br>
+          松江城天守は２０１５年７月８日に国宝に<br class="sp-only">指定され、２０２５年に国宝指定から１０周年を迎えます。
         </p>
         <div class="feature-logo">
           <img src="/img/exp/matsuejouLogo.jpg" alt="feature">
           <p class="feature-logo__text">松江城天守<br class="pc-only">国宝１０周年記念<br class="pc-only">ロゴマーク</p>
         </div>
         <p class="feature-text ft">
-          戦乱の時代で一切の攻城を受けずに<br class="sp-only">現代に残った松江城は、<br>
-          秀吉・家康に仕えたとされる「堀尾吉晴」の<br class="sp-only">城攻め経験を基に、<br>
-          籠城戦すらも考慮される実戦を想定した<br class="sp-only">築城がされています。
+          戦乱の時代で一切の攻城を受けずに<br class="sp-only">現代に残った松江城は、<br class="pc-only">秀吉・家康に<br class="sp-only">仕えたとされる「堀尾吉晴」の城攻め経験を<br class="sp-only">基に、<br class="pc-only">籠城戦すらも考慮される実戦を想定した築城がされています。
         </p>
         <p class="feature-text sc" style="margin-top: 2%;">
-          松江城攻略室は、<br class="sp-only">まさに「鉄壁の城」と呼ぶにふさわしい松江城を、<br>
-
-          戦乱の世には果たされなかった「攻略」の視点で描く<br class="sp-only">オリジナルブラウザゲームです。
+          松江城攻略室は、まさに「鉄壁の城」と呼ぶに<br class="sp-only">ふさわしい松江城を、<br class="pc-only">戦乱の世には果たされ<br class="sp-only">なかった「攻略」の視点で描く<br class="sp-only">オリジナルブラウザゲームです。
         </p>
         <img src="/img/exp/matsuejouImage.jpg" alt="feature" class="feature-image pc-only">
         <img src="/img/exp/matsuejouImage-sp.jpg" alt="feature" class="feature-image sp-only">
@@ -314,7 +307,7 @@ section {
       width: 90vw;
       height: 132vw;
       margin: 8% auto 0;
-      font-size: 3.1vw;
+      font-size: 3.3vw;
       padding-top: 8%;
     }
     .exp-text__content {
@@ -414,8 +407,8 @@ section {
     @include mixins.max-screen(800px) {
       background-image: url('/img/exp/matsuejouBG-sp.jpg');
       width: 90vw;
-      height: 225vw;
-      font-size: 3.1vw;
+      height: auto;
+      font-size: 3.3vw;
       padding: 5% 4%;
       margin: 12% auto;
     }
@@ -429,7 +422,6 @@ section {
     }
     .feature-logo {
       margin: 3% auto 2%;
-
       position: relative;
       img {
         width: 402px;
@@ -449,6 +441,7 @@ section {
           bottom: -15%;
           right: 0;
           transform: translateX(-22%);
+          color: #998000;
           background-color: #fff;
           width: 80%;
           margin: 0 auto;
@@ -458,8 +451,6 @@ section {
         }
       }
     }
-
-
     .feature-image {
       width: 640px;
       margin: 1.8% auto;

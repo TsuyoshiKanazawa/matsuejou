@@ -55,7 +55,7 @@ section {
   @include mixins.max-screen(800px) {
     background-image: url('/img/guide/guideBG-sp.jpg');
     width: 90vw;
-    height: 705vw;
+    height: 687vw;
     padding: 4% 6%;
   }
   .guide-title {
@@ -135,7 +135,7 @@ section {
         padding: 0 10px 0 20px;
         margin-top: 2%;
         @include mixins.max-screen(800px) {
-          font-size: 3.1vw;
+          font-size: 3.3vw;
           line-height: 1.8;
           padding: 0 3%;
         }

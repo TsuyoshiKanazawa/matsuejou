@@ -245,7 +245,7 @@ section {
           }
           @include mixins.max-screen(800px) {
             width: 100%;
-            font-size: 3.6vw;
+            font-size: 3.3vw;
             padding: 2% 19vw 0 1vw;
           }
         }
@@ -263,9 +263,8 @@ section {
     width: 220px;
     @include mixins.max-screen(800px) {
       width: 40vw;
-      bottom: 0.5%;
-      left: 65%;
-      transform: scale(-1, 1);
+      bottom: 3%;
+      left: -15%;
     }
   }
 }

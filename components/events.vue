@@ -46,7 +46,7 @@
           ７月下旬 ～<br class="pc-only">
           ８月下旬（予定）
         </div>
-        <a href="/" target="_blank" class="events-inner-item-title">
+        <a href="https://www.city.matsue.lg.jp/kanko_bunka_sports/rekishi_bunkazai/3/mamorukai/15305.html" target="_blank" class="events-inner-item-title">
           国宝五城<br class="pc-only">
           天守合同床磨き
         </a>
@@ -97,8 +97,8 @@ export default {
   @include mixins.max-screen(800px) {
     background-image: url('/img/events/eventsBG-sp.jpg');
     width: 90vw;
-    height: 270vw;
-    padding: 4% 5%;
+    height: auto;
+    padding: 4% 5% 15%;
     margin: 20% auto 0%;
   }
   .events-title {
@@ -143,7 +143,7 @@ export default {
       text-align: center;
       margin-bottom: 20px;
       @include mixins.max-screen(800px) {
-        font-size: 3.5vw;
+        font-size: 3.3vw;
         line-height: 1.9;
         margin-bottom: 5vw;
         margin-top: -4vw;
@@ -175,7 +175,7 @@ export default {
         @include mixins.max-screen(800px) {
           width: 100%;
           text-align: center;
-          font-size: 3.5vw;
+          font-size: 3.3vw;
         }
       }
       .events-inner-item-title {
@@ -202,7 +202,7 @@ export default {
         width: 65%;
         @include mixins.max-screen(800px) {
           width: 100%;
-          font-size: 3.7vw;
+          font-size: 3.3vw;
         }
       }
     }
@@ -235,7 +235,7 @@ export default {
     right: 0;
     @include mixins.max-screen(800px) {
       width: 25vw;
-      bottom: -2.5%;
+      bottom: -4%;
     }
   }
 }

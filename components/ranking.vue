@@ -184,7 +184,7 @@ export default {
     margin: -2% auto 2%;
     line-height: 2;
     @include mixins.max-screen(800px) {
-      font-size: 3.1vw;
+      font-size: 3.3vw;
       line-height: 2;
       margin: -4% auto 2%;
     }
@@ -345,15 +345,15 @@ export default {
           .rankingScore__label {
             background-color: #006837;
             color: #fff;
-            width: 12vw;
+            width: 11vw;
             height: 6vw;
             text-align: center;
             line-height: 6vw;
-            font-size: 3.5vw;
+            font-size: 3.1vw;
             margin-right: 4%;
           }
           .rankingScore__value {
-            font-size: 4.4vw;
+            font-size: 4vw;
             line-height: 6vw;
           }
         }
@@ -365,26 +365,26 @@ export default {
           .rankingScore__label {
             background-color: #006837;
             color: #fff;
-            width: 14vw;
+            width: 13vw;
             height: 6vw;
             text-align: center;
             line-height: 6vw;
-            font-size: 3.5vw;
+            font-size: 3.1vw;
             margin-right: 4%;
           }
           .rankingScore__value {
-            font-size: 4.4vw;
+            font-size: 4vw;
             line-height: 6vw;
             text-align: center;
           }
         }
         &.nickname {
           width: 100%;
-          font-size: 4vw;
+          font-size: 3.8vw;
           overflow-wrap: break-word;
           img {
-            width: 10vw;
-            height: 10vw;
+            width: 9vw;
+            height: 9vw;
             margin-right: 4vw;
           }
           .rankingScore__value {
