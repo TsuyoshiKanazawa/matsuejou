@@ -1,5 +1,5 @@
 <template>
-  <section class="events fade-enter-from" v-observe="'inview'" style="scroll-margin-top: 120px;">
+  <section class="events fade-enter-from" v-observe="'inview'" style="">
     <div class="events-title">
       <h2>関連イベント</h2>
       <p>（２０２５年）</p>
@@ -85,6 +85,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+section {
+  scroll-margin-top: 120px;
+  @include mixins.max-screen(800px) {
+    scroll-margin-top: 8vw;
+  }
+}
 .events {
   padding: 0 6% 4%;
   background-image: url('/img/events/eventsBG.jpg');

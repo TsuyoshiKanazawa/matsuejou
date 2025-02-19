@@ -72,15 +72,15 @@
       <div class="feature fade-enter-from" v-observe="'inview'">
         <p>
           松江城は江戸時代に全国１７０箇所も<br class="sp-only">あったと言われるお城のなかで、<br>
-          現在は１２城しか残っていない江戸時代またはそれ以前に建造された「現存天守」のひとつ。<br>
-          松江城天守は２０１５年７月８日に国宝に<br class="sp-only">指定され、２０２５年に国宝指定から１０周年を迎えます。
+          現在は１２城しか残っていない江戸時代または<br class="sp-only">それ以前に建造された「現存天守」のひとつ。<br>
+          松江城天守は２０１５年７月８日に国宝に<br class="sp-only">指定され、２０２５年に国宝指定から<br class="sp-only">１０周年を迎えます。
         </p>
         <div class="feature-logo">
           <img src="/img/exp/matsuejouLogo.jpg" alt="feature">
           <p class="feature-logo__text">松江城天守<br class="pc-only">国宝１０周年記念<br class="pc-only">ロゴマーク</p>
         </div>
         <p class="feature-text ft">
-          戦乱の時代で一切の攻城を受けずに<br class="sp-only">現代に残った松江城は、<br class="pc-only">秀吉・家康に<br class="sp-only">仕えたとされる「堀尾吉晴」の城攻め経験を<br class="sp-only">基に、<br class="pc-only">籠城戦すらも考慮される実戦を想定した築城がされています。
+          戦乱の時代で一切の攻城を受けずに<br class="sp-only">現代に残った松江城は、<br class="pc-only">秀吉・家康に<br class="sp-only">仕えたとされる「堀尾吉晴」の城攻め経験を<br class="sp-only">基に、<br class="pc-only">籠城戦すらも考慮される実戦を想定した<br class="sp-only">築城がされています。
         </p>
         <p class="feature-text sc" style="margin-top: 2%;">
           松江城攻略室は、まさに「鉄壁の城」と呼ぶに<br class="sp-only">ふさわしい松江城を、<br class="pc-only">戦乱の世には果たされ<br class="sp-only">なかった「攻略」の視点で描く<br class="sp-only">オリジナルブラウザゲームです。
@@ -147,6 +147,9 @@ export default {
 section {
   position: relative;
   scroll-margin-top: 50px;
+  @include mixins.max-screen(800px) {
+    scroll-margin-top: 0;
+  }
   .NinjaClimb1 {
     position: absolute;
     top: 50px;

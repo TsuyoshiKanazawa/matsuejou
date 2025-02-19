@@ -53,7 +53,6 @@
 footer {
   background-color: #383838;
   width: 100%;
-  overflow-x: hidden;
   .footer-wrapper {
     max-width: 1120px;
     height: 300px;
@@ -72,15 +71,15 @@ footer {
       left: 3%;
       width: 102px;
       @include mixins.max-screen(800px) {
-        top: -33%;
+        top: -31%;
         width: 20vw;
       }
     }
-
     .footer-contents-wrapper {
       display: flex;
       justify-content: flex-start;
       gap: 5%;
+      overflow-x: hidden;
       @include mixins.max-screen(800px) {
         width: fit-content;
         position: relative;
@@ -135,6 +134,7 @@ footer {
         height: 136px;
         margin-top: 85px;
         margin-left: -2%;
+        overflow: hidden;
         @include mixins.max-screen(800px) {
           margin-top: 2%;
           margin-left: 0;
@@ -172,7 +172,7 @@ footer {
       bottom: 0;
       right: 2%;
       @include mixins.max-screen(800px) {
-        right: 0;
+        right: 5%;
         bottom: 1%;
       }
       .footer-copyright-img {
@@ -182,7 +182,7 @@ footer {
         @include mixins.max-screen(800px) {
           width: 30vw;
           position: absolute;
-          left: -50%;
+          left: -110%;
           bottom: 0;
         }
       }
@@ -191,9 +191,8 @@ footer {
         font-size: 14px;
         line-height: 2;
         @include mixins.max-screen(800px) {
-          font-size: 3vw;
+          font-size: 2vw;
         }
-
       }
     }
   }

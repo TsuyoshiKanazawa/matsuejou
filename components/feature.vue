@@ -1,6 +1,6 @@
 <template>
-  <section style="padding-top: 4%; scroll-margin-top: 80px;">
-    <div class="feature fade-enter-from" v-observe="'inview'">
+  <section style="" class="fade-enter-from" v-observe="'inview'">
+    <div class="feature">
       <h2 class="feature-title">松江城の特徴</h2>
       <div class="builder">
         築城主
@@ -137,6 +137,13 @@
 </template>
 
 <style lang="scss" scoped>
+section {
+  padding-top: 4%;
+  scroll-margin-top: 80px;
+  @include mixins.max-screen(800px) {
+    scroll-margin-top: 5vw;
+  }
+}
 .feature {
   padding: 4%;
   background-image: url('/img/feature/featureBG.jpg');

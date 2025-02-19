@@ -1,5 +1,5 @@
 <template>
-  <section class="ranking fade-enter-from" v-observe="'inview'" style="scroll-margin-top: 120px;">
+  <section class="ranking fade-enter-from" v-observe="'inview'" style="">
     <div class="ranking-wrapper" :class="{ open: open }">
       <div class="ranking-title">
         <div>松江城攻略室<br>鉄壁の城を攻略せよ!!</div>
@@ -10,56 +10,101 @@
         ※スコアボードは毎時００分に更新されます。
       </div>
       <div class="ranking-inner" :class="{ open: open }">
-        <div class="stageSelector">
-          <div class="stageSelector__item" @click="stage = 'stage:1'" :class="{ active: stage === 'stage:1' }">
-            <p class="stageSelector__item__stage">其ノ一</p><p class="stageSelector__item__stageName"> 水堀</p>
-          </div>
-          <div class="stageSelector__item" @click="stage = 'stage:2'" :class="{ active: stage === 'stage:2' }">
-            <p class="stageSelector__item__stage">其ノ二</p><p class="stageSelector__item__stageName"> 石垣</p>
-          </div>
-          <div class="stageSelector__item" @click="stage = 'stage:3'" :class="{ active: stage === 'stage:3' }">
-            <p class="stageSelector__item__stage">其ノ三</p><p class="stageSelector__item__stageName"> 大手門</p>
-          </div>
-          <div class="stageSelector__item" @click="stage = 'stage:4'" :class="{ active: stage === 'stage:4' }">
-            <p class="stageSelector__item__stage">其ノ四</p><p class="stageSelector__item__stageName"> 附櫓</p>
-          </div>
-          <div class="stageSelector__item" @click="stage = 'stage:5'" :class="{ active: stage === 'stage:5' }">
-            <p class="stageSelector__item__stage">其ノ五</p><p class="stageSelector__item__stageName"> 天守</p>
+        <div class="border1">
+          <div class="border2">
+            <div class="border3">
+              <div class="border4">
+                <div class="border5">
+                  <div class="stageSelector" v-if="windowSize.width > 800">
+                    <div class="stageSelector__item" @click="stage = 'stage:1'" :class="{ active: stage === 'stage:1' }">
+                      <p class="stageSelector__item__stage">其ノ一</p><p class="stageSelector__item__stageName"> 水堀</p>
+                    </div>
+                    <div class="stageSelector__item" @click="stage = 'stage:2'" :class="{ active: stage === 'stage:2' }">
+                      <p class="stageSelector__item__stage">其ノ二</p><p class="stageSelector__item__stageName"> 石垣</p>
+                    </div>
+                    <div class="stageSelector__item" @click="stage = 'stage:3'" :class="{ active: stage === 'stage:3' }">
+                      <p class="stageSelector__item__stage">其ノ三</p><p class="stageSelector__item__stageName"> 大手門</p>
+                    </div>
+                    <div class="stageSelector__item" @click="stage = 'stage:4'" :class="{ active: stage === 'stage:4' }">
+                      <p class="stageSelector__item__stage">其ノ四</p><p class="stageSelector__item__stageName"> 附櫓</p>
+                    </div>
+                    <div class="stageSelector__item" @click="stage = 'stage:5'" :class="{ active: stage === 'stage:5' }">
+                      <p class="stageSelector__item__stage">其ノ五</p><p class="stageSelector__item__stageName"> 天守</p>
+                    </div>
+                  </div>
+                  <div class="stageSelector-sp" v-else>
+                    <div class="stageSelector__item" @click="stage = 'stage:1'" :class="{ active: stage === 'stage:1' }">
+                      <p class="stageSelector__item__stage">其ノ一</p>
+                    </div>
+                    <div class="stageSelector__item" @click="stage = 'stage:2'" :class="{ active: stage === 'stage:2' }">
+                      <p class="stageSelector__item__stage">其ノ二</p>
+                    </div>
+                    <div class="stageSelector__item" @click="stage = 'stage:3'" :class="{ active: stage === 'stage:3' }">
+                      <p class="stageSelector__item__stage">其ノ三</p>
+                    </div>
+                    <div class="stageSelector__item" @click="stage = 'stage:4'" :class="{ active: stage === 'stage:4' }">
+                      <p class="stageSelector__item__stage">其ノ四</p>
+                    </div>
+                    <div class="stageSelector__item" @click="stage = 'stage:5'" :class="{ active: stage === 'stage:5' }">
+                      <p class="stageSelector__item__stage">其ノ五</p>
+                    </div>
+                  </div>
+                  <div v-if="windowSize.width < 800" class="stageName">
+                    <div v-if="stage === 'stage:1'" class="stageName__item">
+                      水堀
+                    </div>
+                    <div v-if="stage === 'stage:2'" class="stageName__item">
+                      石垣
+                    </div>
+                    <div v-if="stage === 'stage:3'" class="stageName__item">
+                      大手門
+                    </div>
+                    <div v-if="stage === 'stage:4'" class="stageName__item">
+                      附櫓
+                    </div>
+                    <div v-if="stage === 'stage:5'" class="stageName__item">
+                      天守
+                    </div>
+                  </div>
+
+                  <div class="rankingBoardTitle">
+                    <div class="rankingTitle rank">順位</div>
+                    <div class="rankingTitle score">スコア</div>
+                    <div class="rankingTitle nickname">プレイヤー</div>
+                  </div>
+                  <div v-if="windowSize.width > 800" v-for="ranking in rankings[stage]" :key="ranking.rank" class="rankingBoard">
+                    <div class="rankingScore rank">{{ ranking.rank }}位</div>
+                    <div class="rankingScore score">{{ comma(ranking.score) }}</div>
+                    <div class="rankingScore nickname">
+                      <img v-if="ranking.icon !== 9" :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.png`" alt="icon">
+                      <img v-else :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.jpg`" alt="icon">
+                      {{ ranking.nickname }}
+                    </div>
+                  </div>
+                  <div v-if="windowSize.width < 800" v-for="ranking in (open ? rankings[stage] : rankings[stage]?.slice(0, 5))" :key="ranking.rank" class="rankingBoard-sp">
+                    <div class="rankingScore rank">
+                      <div class="rankingScore__label">順位</div>
+                      <div class="rankingScore__value">{{ ranking.rank }}位</div>
+                    </div>
+                    <div class="rankingScore score">
+                      <div class="rankingScore__label">スコア</div>
+                      <div class="rankingScore__value">{{ comma(ranking.score) }}</div>
+                    </div>
+                    <div class="rankingScore nickname">
+                      <img v-if="ranking.icon !== 9" :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.png`" alt="icon">
+                      <img v-else :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.jpg`" alt="icon">
+                      <div class="rankingScore__value">{{ ranking.nickname }}</div>
+                    </div>
+                  </div>
+                  <button class="rankingBoard-sp__button" v-if="windowSize.width < 800" @click="open = !open">
+                    {{ open ? '▲閉じる' : '▼10位まで表示' }}
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="rankingBoardTitle">
-          <div class="rankingTitle rank">順位</div>
-          <div class="rankingTitle score">スコア</div>
-          <div class="rankingTitle nickname">プレイヤー</div>
-        </div>
-        <div v-if="windowSize.width > 800" v-for="ranking in rankings[stage]" :key="ranking.rank" class="rankingBoard">
-          <div class="rankingScore rank">{{ ranking.rank }}位</div>
-          <div class="rankingScore score">{{ comma(ranking.score) }}</div>
-          <div class="rankingScore nickname">
-            <img v-if="ranking.icon !== 9" :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.png`" alt="icon">
-            <img v-else :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.jpg`" alt="icon">
-            {{ ranking.nickname }}
-          </div>
-        </div>
-        <div v-if="windowSize.width < 800" v-for="ranking in (open ? rankings[stage] : rankings[stage]?.slice(0, 5))" :key="ranking.rank" class="rankingBoard-sp">
-          <div class="rankingScore rank">
-            <div class="rankingScore__label">順位</div>
-            <div class="rankingScore__value">{{ ranking.rank }}位</div>
-          </div>
-          <div class="rankingScore score">
-            <div class="rankingScore__label">スコア</div>
-            <div class="rankingScore__value">{{ comma(ranking.score) }}</div>
-          </div>
-          <div class="rankingScore nickname">
-            <img v-if="ranking.icon !== 9" :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.png`" alt="icon">
-            <img v-else :src="`/matsue-castle-kouryakushitsu/img/icons/icon${ranking.icon}.jpg`" alt="icon">
-            <div class="rankingScore__value">{{ ranking.nickname }}</div>
-          </div>
-        </div>
-        <button class="rankingBoard-sp__button" v-if="windowSize.width < 800" @click="open = !open">
-          {{ open ? '▲閉じる' : '▼10位まで表示' }}
-        </button>
       </div>
     </div>
   </section>
@@ -127,9 +172,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+section {
+  scroll-margin-top: 120px;
+  @include mixins.max-screen(800px) {
+    scroll-margin-top: 8vw;
+  }
+}
 .ranking {
   margin: 7% auto 0%;
-  
   .ranking-wrapper {
     background-image: url('/img/rankingBackground.png');
     background-size: 100% 100%;
@@ -190,7 +240,6 @@ export default {
     }
   }
   .ranking-inner {
-    background-image: url('/img/rankingBoardBG.png');
     background-size: 100% 100%;
     background-position: center;
     width: 632px;
@@ -199,10 +248,34 @@ export default {
     @include mixins.max-screen(800px) {
       width: 100%;
       height: auto;
-      background-image: url('/img/rankingBoardBG2-sp.jpg');
-      padding-bottom: 1.3vw;
-      &.open {
-        background-image: url('/img/rankingBoardBG-sp.jpg');
+      background-color: #fff;
+    }
+    .border1 {
+      border: 2px solid #002D18;
+      @include mixins.max-screen(800px) {
+        border: 1px solid #002D18;
+      }
+      .border2 {
+        border: 2px solid #006837;
+        @include mixins.max-screen(800px) {
+          border: 1px solid #006837;
+        }
+        .border3 {
+          border: 2px solid #002D18;
+          @include mixins.max-screen(800px) {
+            border: 1px solid #00AF5C;
+          }
+          .border4 {
+            @include mixins.max-screen(800px) {
+              border: 1px solid #006837;
+            }
+            .border5 {
+              @include mixins.max-screen(800px) {
+                border: 1px solid #002D18;
+              }
+            }
+          }
+        }
       }
     }
     .stageSelector {
@@ -253,6 +326,47 @@ export default {
         &.active {
           background-image: url('/img/stageSelecter1.png');
         }
+      }
+    }
+    .stageSelector-sp {
+      display: flex;
+      justify-content: center;
+      gap: 2.5vw;
+      padding: 10% 10px 2.5%;
+      .stageSelector__item {
+        writing-mode: vertical-rl; /* 縦書きに設定 */
+        text-align: center; /* 中央揃え */
+        text-align: center;
+        width: 11.4vw;
+        height: 21vw;
+        font-size: 4vw;
+        line-height: 10vw;
+        background-image: url('/img/stageSelecter0-sp.png');
+        background-size: 100% 100%;
+        background-position: center;
+        &.active {
+          background-image: url('/img/stageSelecter1-sp.png');
+        }
+        .stageSelector__item__stage {
+          font-size: 3.1vw;
+          text-align: center;
+          line-height: 11.6vw;
+        }
+      }
+    }
+    .stageName {
+      margin: 0 auto;
+      gap: 2.3vw;
+      width: 67vw;
+      height: 10vw;
+      background-image: url('/img/stageName-sp.jpg');
+      background-size: 100% 100%;
+      background-position: center;
+      margin-bottom: 10%;
+      .stageName__item {
+        font-size: 4vw;
+        text-align: center;
+        line-height: 10vw;
       }
     }
     .rankingBoardTitle {

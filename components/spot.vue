@@ -1,5 +1,5 @@
 <template>
-  <section class="spot fade-enter-from" v-observe="'inview'" style="scroll-margin-top: 120px;">
+  <section class="spot fade-enter-from" v-observe="'inview'" style="">
     <div class="spot-title">
       <h2>周辺スポット</h2>
     </div>
@@ -56,6 +56,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+section {
+  scroll-margin-top: 120px;
+  @include mixins.max-screen(800px) {
+    scroll-margin-top: 8vw;
+  }
+}
 .spot {
   padding: 0 4% 4%;
   background-image: url('/img/spot/spotBG.jpg');

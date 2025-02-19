@@ -145,7 +145,7 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     opacity: 0;
     visibility: hidden;
     background-color: #fff;
@@ -154,6 +154,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('/img/menuBG.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     &.active {
       opacity: 1;
       visibility: visible;
@@ -161,12 +165,12 @@ export default {
     .menu-item {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: left;
       flex-direction: column;
       gap: 6vh;
-      margin-top: -20%;
+      margin-top: -5%;
       a {
-        font-size: min(5vw,30px);
+        font-size: min(5.5vw,34px);
       }
 
     }

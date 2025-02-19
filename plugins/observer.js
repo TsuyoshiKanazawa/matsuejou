@@ -3,8 +3,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     mounted(el, binding) {
       let observerOptions = {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.1,
+        threshold: [0, 0.1],
       };
 
       let observer = new IntersectionObserver((entries) => {

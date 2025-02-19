@@ -39,6 +39,7 @@ section {
   scroll-margin-top: 40px;
   @include mixins.max-screen(800px) {
     padding-top: 20%;
+    scroll-margin-top: -11vw;
   }
 }
 .guide {
