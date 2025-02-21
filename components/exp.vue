@@ -37,7 +37,11 @@
           ランキングトップを狙ってみよう！<br>
 
           <span>シークレットステージ</span>
-          ２０２５年２月２５日～２０２６年３月３１日の<br class="sp-only">期間中、<br class="pc-only">松江城内に設置されている<br class="sp-only">二次元コードを読み取ると、<br>シークレットステージ「隠ステージ」が出現！<br>全ステージクリアして、松江城を攻略しよう！
+          ２０２５年２月２５日～２０２６年３月３１日の<br class="sp-only">期間中、<br class="pc-only">松江城内に設置されている<br class="sp-only">二次元コードを読み取ると、<br>シークレットステージ「隠ステージ」が出現！<br>全ステージクリアして、松江城を攻略しよう！<br>
+          ＜設置場所＞<br>
+        　　松江城山公園内２ヶ所<br>
+        　  （大手前駐車場からの入口付近、一ノ門跡付近）<br>
+        　　※一ノ門跡付近については３月６日より設置
         </p>
         <img src="/img/player5.png" alt="icon" class="exp-text__icon">
       </div>
@@ -298,20 +302,20 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     width: 800px;
-    height: 445px;
+    height: auto;
     margin: 4% auto 0;
     text-align: center;
     line-height: 2;
-    padding-top: 4%;
+    padding: 4% 0 5%;
     font-size: 14px;
     position: relative;
     @include mixins.max-screen(800px) {
       background-image: url('/img/exp/expBG-sp.jpg');
       width: 90vw;
-      height: 132vw;
+      height: auto;
       margin: 8% auto 0;
       font-size: 3.3vw;
-      padding-top: 8%;
+      padding: 8% 0 20%;
     }
     .exp-text__content {
       span {
